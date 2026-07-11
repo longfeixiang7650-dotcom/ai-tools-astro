@@ -3,6 +3,7 @@
 import Base from '../../layouts/Base.astro';
 import ScoreRadarChart from '../../components/ScoreRadarChart.astro';
 import { ALL_TOOLS } from '../../data/tools';
+import { YOUTUBE_VIDEOS } from '../../data/youtube';
 
 export async function getStaticPaths() {
   return ALL_TOOLS.map(tool => ({
@@ -16,7 +17,8 @@ const relatedTools = ALL_TOOLS
   .filter(t => t.category === tool.category && t.id !== tool.id)
   .slice(0, 4);
 const youtubeQuery = encodeURIComponent(`${tool.name} AI review tutorial`);
-const hasVideo = false;
+const videoId = YOUTUBE_VIDEOS[tool.id] ?? '';
+const hasVideo = videoId.length > 0;
 ---
 
 <Base title={`${tool.name} Review 2026 — Honest Analysis | AI Tools Nav`} description={`Honest hands-on review of ${tool.name}. ${(tool.description || '').slice(0, 150)}`}>
