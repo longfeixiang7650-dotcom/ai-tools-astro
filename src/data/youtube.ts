@@ -1,84 +1,117 @@
 /**
- * YouTube video IDs for devex-tools.net tools.
- * Each video is the best available review/tutorial for the tool.
+ * YouTube video IDs for ai-tools-astro (aitoolsnav.net).
+ * Each video is the best available review/tutorial for the AI tool.
  * 
- * To update: run scripts/youtube_fill_remaining.py
  * Empty string = fallback to "Watch on YouTube" search link
  */
 export const YOUTUBE_VIDEOS: Record<string, string> = {
-  // IDEs & Code Editors
-  "vscode": "AdygBbbEnco",           // Fireship - Best OS for programming?
-  "intellij-idea": "gJrjgg1KVL4",    // Spring Boot Tutorial - works as IntelliJ demo
-  "sublime-text": "-6ikAMmu3Nc",     // Tech With Tim - Sublime Text settings
-  "vim": "AsoaYO_TDKw",              // The PrimeTime - Vim vs Neovim
-  "eclipse-ide": "",                 // TODO: Need correct Eclipse video
-  "neovim": "7xFOxIrHyHE",           // The PrimeTime - Neovim (auto-fixed)
-  "webstorm": "h55emgImrLk",         // Fireship - Stop calling Fleet a VS Code Killer (covers WebStorm)
-  "xcode": "8PhdfcX9tG0",            // Fireship - I tried 10 code editors
-  "android-studio": "L0AUi4Qn7g8",   // Android Studio review
-  "pycharm": "eXinDi55iOk",          // Tech With Tim - 5 Best Python IDEs
+  // AI Writing & Content
+  "chatgpt": "jwGTzbziLI8",
+  "jasper": "VHbUHlnP5KI",
+  "copy-ai": "RL2TTsXCBTk",
+  "writesonic": "ZzhMbdWhloE",
+  "grammarly": "CVDtzG5I3TM",
+  "rytr": "kIMHKH10DjE",
+  "sudowrite": "O5Eixclqwyw",
+  "claude": "y1I5VAGF3Qs",
+  "frase": "F15TxvnwriU",
+  "contentbot": "",
 
-  // Version Control
-  "github": "R8_veQiYBjI",           // TechWorld with Nana - GitHub Actions Tutorial
-  "gitlab": "qP8kir2GUgo",           // TechWorld with Nana - GitLab CI CD Tutorial
-  "bitbucket": "8JJ101D3knE",        // Git Tutorial (Bitbucket mention)
-  "sourceforge": "f3POJdp79Mc",      // SourceForge review
-  "apache-subversion": "",           // TODO
+  // AI Image & Design
+  "midjourney": "5YkLuw21QvI",
+  "dall-e-3": "Cp1nV1X21m4",
+  "stable-diffusion": "UioqtL52YzA",
+  "adobe-firefly": "nqBZau06lTY",
+  "canva-ai": "yKt9puwEUyw",
+  "leonardo-ai": "ClaYlwIl9Xk",
+  "runway": "6KjNWvg08Fs",
+  "picsart-ai": "",
+  "clipdrop": "",
+  "ideogram": "jDJHNky4wcg",
 
-  // CI/CD
-  "jenkins": "",                     // TODO: was mis-assigned to Terraform
-  "github-actions": "JSuS-zXMVwE",  // Fireship - Cursor ditches VS Code
-  "circleci": "1HpEagsIY2o",         // Paperclick - CircleCI vs Jenkins vs GitHub Actions
-  "gitlab-ci-cd": "qP8kir2GUgo",     // TechWorld with Nana - GitLab CI CD Tutorial
-  "travis-ci": "JsEd6dpLGbs",        // Best CI/CD Tools review
-  "teamcity": "Byk9XQtaNzY",         // TeamCity (game, but will do)
-  "bamboo": "",                      // TODO: was Bamboo scooter review
-  "argocd": "MeU5_k9ssrs",           // TechWorld with Nana - ArgoCD Tutorial
-  "spinnaker": "",                   // TODO: was watch review
-  "drone-ci": "",                    // TODO: was drone camera review
+  // AI Code Assistant
+  "github-copilot": "xyi3tTAS2QA",
+  "cursor": "tqQMukGRCFE",
+  "replit-ai": "geMELdFTDhU",
+  "tabnine": "na6AnxjCbIQ",
+  "codeium": "svOv7dbHqzc",
+  "amazon-codewhisperer": "mxeSqOyliL0",
+  "gitlab-duo": "",
+  "sourcegraph-cody": "ljS2KiDRnBE",
+  "pieces": "",
+  "debuild": "",
 
-  // API Development
-  "postman": "CLG0ha_a0q8",          // Code Bless You - Postman API Testing Tutorial
-  "swagger": "8yI4gD1HruY",          // Nick Chapsas - Swagger is Gone in .NET 9
-  "insomnia": "ged7dQmnmlQ",         // Paperclick - Postman vs Insomnia
-  "hoppscotch": "tibdI9KnQec",       // Hoppscotch review
-  "apollo-graphql": "eIQh02xuVw4",   // Fireship - GraphQL Explained in 100 Seconds
-  "rapidapi": "",                    // TODO
+  // AI Video & Audio
+  "synthesia": "gJwk18u9vNQ",
+  "heygen": "IeNWxFpinBs",
+  "elevenlabs": "GtnRt1QlVkA",
+  "descript": "rA7FS52rASQ",
+  "murf": "",
+  "pictory": "",
+  "runway-gen-2": "",
+  "invideo-ai": "mjzR8Sus8IA",
+  "veed-io": "uK28rbYh7O8",
+  "wondershare-filmora-ai": "",
 
-  // Database Tools
-  "dbeaver": "",                     // TODO
-  "pgadmin": "n2Fluyr3lbc",         // Fireship - PostgreSQL in 100 Seconds
-  "mongodb-compass": "-bt_y4Loofg",  // Fireship - MongoDB in 100 Seconds
-  "tableplus": "BW-YO9fqFho",       // Paperclick - TablePlus vs DataGrip
-  "datagrip": "BW-YO9fqFho",        // Paperclick - TablePlus vs DataGrip
-  "mysql-workbench": "",             // TODO
-  "redisinsight": "",                // TODO
-  "studio-3t": "",                   // TODO
+  // AI Productivity
+  "notion-ai": "CNQcwNMxLsE",
+  "motion": "9CwDv4upSAY",
+  "mem": "",
+  "otter-ai": "uzdLKeWJAnU",
+  "fireflies-ai": "tKcqzmmWAoE",
+  "krisp": "",
+  "superhuman-ai": "qnS6RfxmlX8",
+  "reclaim-ai": "",
+  "clockwise": "",
+  "goblin-tools": "",
 
-  // Container & Orchestration
-  "docker": "",                      // TODO
-  "kubernetes": "",                  // TODO
-  "terraform": "",                   // TODO (was TechWorld Nana - good Terraform video but removed due to duplicate)
-  "ansible": "",                     // TODO
-  "helm": "",                        // TODO
-  "podman": "e6Q-P-60qis",          // Savage Reviews - Podman vs OrbStack
-  "vagrant": "",                     // TODO
-  "packer": "",                      // TODO
+  // AI SEO & Marketing
+  "semrush-ai": "",
+  "surfer-seo": "",
+  "writer": "",
+  "marketmuse": "",
+  "wordlift": "",
+  "anyword": "",
+  "acrolinx": "",
 
-  // Monitoring & Debugging
-  "datadog": "",                     // TODO
-  "sentry": "",                      // TODO
-  "grafana": "",                     // TODO
-  "prometheus": "",                  // TODO
-  "new-relic": "",                   // TODO
-  "splunk": "",                      // TODO
-  "elasticsearch": "",               // TODO
-  "jaeger": "",                      // TODO
-  "opentelemetry": "",               // TODO
-  "chronosphere": "",                // TODO
+  // AI Customer Service
+  "cognigy": "",
 
-  // Test Automation
-  "jest": "",                        // TODO
-  "selenium": "",                    // TODO
-  "cypress": "",                     // TODO
+  // AI Data & Analytics
+  "tableau-ai": "",
+  "julius-ai": "",
+  "obviously-ai": "",
+  "akkio": "",
+  "polymer": "",
+  "seek-ai": "",
+  "pandas-ai": "",
+  "hex-ai": "",
+  "sisu": "",
+  "chatgpt-advanced-data-analysis": "",
+
+  // AI Automation & No-Code
+  "zapier-ai": "gr1HZb4lmCw",
+  "make-ai": "EUEN9nMpbK0",
+  "n8n-ai": "ZeJXI2MAhj0",
+  "bubble-ai": "DYGRkBJQic0",
+  "airtable-ai": "7OOdjl3tlZo",
+  "softr-ai": "",
+  "adalo-ai": "",
+  "glide-ai": "",
+  "bardeen-ai": "",
+  "tray-ai": "",
+
+  // AI Agent Frameworks
+  "autogpt": "aIJYQxj32u4",
+  "autogen": "jniKuBjl2AA",
+  "crewai": "9XBP1wNpBV0",
+  "metagpt": "",
+  "langchain": "dTCiz5iBjHI",
+  "coze": "FVLzmHt300Q",
+  "dify": "GbWgBH8D9zs",
+
+  // Cloud & E-commerce (AI features focus)
+  "shopify-ecommerce": "",
+  "aws-cloud": "",
+  "cloudflare-network": "",
 };
