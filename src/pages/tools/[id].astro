@@ -1,0 +1,229 @@
+---
+// Dynamically generate routes for all tools
+import Base from '../../layouts/Base.astro';
+import ScoreRadarChart from '../../components/ScoreRadarChart.astro';
+import { ALL_TOOLS } from '../../data/tools';
+
+export async function getStaticPaths() {
+  return ALL_TOOLS.map(tool => ({
+    params: { id: tool.id },
+    props: { tool },
+  }));
+}
+
+const { tool } = Astro.props;
+const relatedTools = ALL_TOOLS
+  .filter(t => t.category === tool.category && t.id !== tool.id)
+  .slice(0, 4);
+const youtubeQuery = encodeURIComponent(`${tool.name} AI review tutorial`);
+const hasVideo = false;
+---
+
+<Base title={`${tool.name} Review 2026 — Honest Analysis | AI Tools Nav`} description={`Honest hands-on review of ${tool.name}. ${(tool.description || '').slice(0, 150)}`}>
+  <div class="container" style="padding-top: 32px;">
+    <div class="breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <a href="/tools">Tools</a>
+      <span>›</span>
+      <span>{tool.name}</span>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 32px;">
+      <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--bg-subtle); display: flex; align-items: center; justify-content: center; min-height: 240px;">
+        <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer" style="font-size: 5rem; text-decoration: none;">
+          {tool.icon || '🤖'}
+        </a>
+      </div>
+      
+      <div>
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap;">
+          <span class="tag" style="background: var(--accent-light); color: var(--accent); font-weight: 600; font-size: 0.8rem;">{tool.category}</span>
+          <span class="tag" style="font-size: 0.8rem;">{tool.pricing}</span>
+        </div>
+        <h1 class="tool-detail-title" style="font-size: 1.75rem; margin-bottom: 8px;">{tool.name}</h1>
+        <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 16px;">{tool.description}</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 16px;">
+          <div style="text-align: center; padding: 12px 8px; background: var(--bg-subtle); border-radius: 6px; border: 1px solid var(--border);">
+            <div style="font-size: 1.25rem; font-weight: 800; color: var(--accent);">{tool.rating}</div>
+            <div style="font-size: 0.6875rem; color: var(--text-muted);">Rating</div>
+          </div>
+          <div style="text-align: center; padding: 12px 8px; background: var(--bg-subtle); border-radius: 6px; border: 1px solid var(--border);">
+            <div style="font-size: 1.25rem; font-weight: 800; color: var(--text);">{(tool.reviewCount / 1000).toFixed(1)}k</div>
+            <div style="font-size: 0.6875rem; color: var(--text-muted);">Reviews</div>
+          </div>
+          <div style="text-align: center; padding: 12px 8px; background: var(--bg-subtle); border-radius: 6px; border: 1px solid var(--border);">
+            <div style="font-size: 1.25rem; font-weight: 800; color: var(--text);">{tool.features?.length || 0}</div>
+            <div style="font-size: 0.6875rem; color: var(--text-muted);">Features</div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1; justify-content: center;">Visit Website →</a>
+          <a href={`https://www.youtube.com/results?search_query=${youtubeQuery}`} target="_blank" rel="noopener noreferrer" class="btn" style="flex: 1; justify-content: center;">▶ Watch Reviews</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 4px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 24px; border-bottom: 1px solid var(--border);">
+      <a href="#overview" style="padding: 8px 16px; background: var(--accent-light); color: var(--accent); border-radius: 20px; font-size: 0.8125rem; font-weight: 600; text-decoration: none; white-space: nowrap;">Overview</a>
+      <a href="#pros-cons" style="padding: 8px 16px; background: var(--bg-subtle); color: var(--text-secondary); border-radius: 20px; font-size: 0.8125rem; text-decoration: none; white-space: nowrap;">Pros &amp; Cons</a>
+      <a href="#features" style="padding: 8px 16px; background: var(--bg-subtle); color: var(--text-secondary); border-radius: 20px; font-size: 0.8125rem; text-decoration: none; white-space: nowrap;">Features</a>
+      <a href="#score" style="padding: 8px 16px; background: var(--bg-subtle); color: var(--text-secondary); border-radius: 20px; font-size: 0.8125rem; text-decoration: none; white-space: nowrap;">Score</a>
+      <a href="#pricing" style="padding: 8px 16px; background: var(--bg-subtle); color: var(--text-secondary); border-radius: 20px; font-size: 0.8125rem; text-decoration: none; white-space: nowrap;">Pricing</a>
+      <a href="#video" style="padding: 8px 16px; background: var(--bg-subtle); color: var(--text-secondary); border-radius: 20px; font-size: 0.8125rem; text-decoration: none; white-space: nowrap;">Video</a>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 280px; gap: 40px;">
+      <div>
+        <section id="overview" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Overview</h2>
+          <div style="line-height: 1.7; color: var(--text-secondary);">
+            {(tool.longDescription || '').split('\\n').map(p => p.trim()).filter(p => p).map(p => (<p style="margin-bottom: 12px;">{p}</p>))}
+          </div>
+        </section>
+
+        <section id="pros-cons" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Pros &amp; Cons</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div style="border: 1px solid #22c55e20; border-radius: 8px; padding: 20px; background: rgba(34, 197, 94, 0.05);">
+              <h3 style="font-size: 0.9375rem; font-weight: 700; color: #22c55e; margin-bottom: 10px;">✅ Pros</h3>
+              <ul style="list-style: none; padding: 0;">
+                {(tool.pros || []).map(p => (<li style="padding: 4px 0; font-size: 0.875rem; color: var(--text-secondary); border-bottom: 1px solid #22c55e15;"><span style="color: #22c55e; margin-right: 6px;">+</span> {p}</li>))}
+              </ul>
+            </div>
+            <div style="border: 1px solid #ef444420; border-radius: 8px; padding: 20px; background: rgba(239, 68, 68, 0.05);">
+              <h3 style="font-size: 0.9375rem; font-weight: 700; color: #ef4444; margin-bottom: 10px;">⚠️ Cons</h3>
+              <ul style="list-style: none; padding: 0;">
+                {(tool.cons || []).map(c => (<li style="padding: 4px 0; font-size: 0.875rem; color: var(--text-secondary); border-bottom: 1px solid #ef444415;"><span style="color: #ef4444; margin-right: 6px;">−</span> {c}</li>))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Key Features</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+            {(tool.features || []).map(f => (<div style="padding: 10px 14px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.875rem; color: var(--text-secondary);">✓ {f}</div>))}
+          </div>
+        </section>
+
+        <section id="video" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">🎬 Video Review</h2>
+          {hasVideo ? (
+            <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; background: var(--bg-subtle);">
+                <iframe src={`https://www.youtube.com/embed/${videoId}`} style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen loading="lazy" title={`${tool.name} video review`}></iframe>
+              </div>
+            </div>
+          ) : (
+            <div style="display: flex; flex-direction: column; gap: 12px; padding: 32px 24px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-subtle); text-align: center;">
+              <div style="font-size: 2.5rem;">🎥</div>
+              <div style="font-size: 1rem; font-weight: 600;">Watch "{tool.name}" Reviews on YouTube</div>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); max-width: 400px; margin: 0 auto;">See real users demonstrate and review {tool.name} — hands-on walkthroughs, feature deep-dives, and honest comparisons.</p>
+              <a href={`https://www.youtube.com/results?search_query=${youtubeQuery}`} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; justify-content: center; gap: 6px; margin-top: 4px;">
+                ▶ Watch on YouTube
+              </a>
+            </div>
+          )}
+        </section>
+
+        <section id="score" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 16px;">Score Breakdown</h2>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: start;">
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              {Object.entries(tool.scoreBreakdown || {}).map(([key, val]) => (
+                <div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                    <span style="font-size: 0.8125rem; color: var(--text-secondary); text-transform: capitalize;">{key}</span>
+                    <span style="font-size: 0.8125rem; font-weight: 600;">{val}/100</span>
+                  </div>
+                  <div style="height: 10px; background: var(--bg-subtle); border-radius: 5px; overflow: hidden;">
+                    <div style={`height: 100%; width: ${val}%; background: linear-gradient(90deg, var(--accent), #a855f7); border-radius: 5px;`}></div>
+                  </div>
+                </div>
+              ))}
+              <div style="margin-top: 8px; padding: 12px; background: var(--bg-subtle); border-radius: 6px; text-align: center; border: 1px solid var(--border);">
+                <span style="font-size: 0.8125rem; color: var(--text-muted);">Overall Rating</span>
+                <div style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">{tool.rating}/5.0</div>
+              </div>
+            </div>
+            <div style="border: 1px solid var(--border); border-radius: 8px; padding: 16px;">
+              <h3 style="font-size: 0.8125rem; font-weight: 600; margin-bottom: 8px; color: var(--text-muted); text-align: center;">Performance Radar</h3>
+              <ScoreRadarChart scoreBreakdown={tool.scoreBreakdown} />
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing" style="margin-bottom: 32px; scroll-margin-top: 80px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Pricing</h2>
+          <div style="border: 1px solid var(--border); border-radius: 8px; padding: 20px; background: var(--bg-subtle);">
+            <div style="font-size: 1.125rem; font-weight: 700; margin-bottom: 4px;">{tool.pricing}</div>
+            <div style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">{tool.pricingDetail}</div>
+          </div>
+        </section>
+
+        {(tool.userQuotes || []).length > 0 && (
+          <section style="margin-bottom: 32px;">
+            <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">What Users Say</h2>
+            <div style="display: grid; gap: 12px;">
+              {tool.userQuotes.map(q => (
+                <div style="border: 1px solid var(--border); border-radius: 8px; padding: 16px 20px;">
+                  <p style="font-size: 0.875rem; color: var(--text-secondary); font-style: italic; margin-bottom: 8px;">"{q.quote}"</p>
+                  <div style="font-size: 0.8125rem; font-weight: 600;">— {q.role}{q.company ? `, ${q.company}` : ''}</div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section style="margin-bottom: 32px;">
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">Best For</h2>
+          <div style="padding: 16px 20px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-subtle); font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">{tool.useCase}</div>
+        </section>
+
+        <section style="border-top: 1px solid var(--border); padding-top: 16px; margin-top: 32px;">
+          <p style="font-size: 0.75rem; color: var(--text-muted);">⚖️ All reviews reflect honest, hands-on evaluations by our team. We do not accept sponsored placements. Some links may be affiliate links — see our <a href="/disclosure">full disclosure</a>.</p>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Tool Info</h3>
+          <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.7;">
+            <div style="padding: 4px 0;"><strong>Category:</strong> {tool.category}</div>
+            <div style="padding: 4px 0;"><strong>Pricing:</strong> {tool.pricing}</div>
+            <div style="padding: 4px 0;"><strong>Website:</strong> <a href={tool.websiteUrl} target="_blank">{tool.websiteUrl?.replace('https://', '').replace('http://', '')}</a></div>
+            <div style="padding: 4px 0;"><strong>Reviews:</strong> {tool.reviewCount.toLocaleString()}</div>
+          </div>
+        </div>
+
+        {(tool.alternatives || []).length > 0 && (
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Alternatives</h3>
+            {tool.alternatives.map(altId => {
+              const found = ALL_TOOLS.find(t => t.id === altId);
+              return (<div style="font-size: 0.8125rem; color: var(--text-secondary); padding: 4px 0;">{found ? (<a href={`/tools/${found.id}`} class="sidebar-link">{found.name}</a>) : (<span>{altId}</span>)}</div>);
+            })}
+          </div>
+        )}
+
+        {relatedTools.length > 0 && (
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Related Tools</h3>
+            {relatedTools.map(t => (<a href={`/tools/${t.id}`} class="sidebar-link">{t.name}</a>))}
+          </div>
+        )}
+
+        <div class="sidebar-section" style="position: sticky; top: 80px;">
+          <div style="padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-subtle);">
+            <div style="font-size: 0.8125rem; font-weight: 600; margin-bottom: 8px;">Try {tool.name}</div>
+            <p style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 10px;">Visit the official website to start using {tool.name}.</p>
+            <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 0.8125rem;">Visit Website →</a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Base>
