@@ -838,7 +838,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '🎨',
     description: 'Open-source image generation model with full local control and customization.',
     longDescription:
-      'Stable Diffusion, developed by Stability AI, stands as the undisputed leader in open-source AI image generation—revolutionizing creative workflows by enabling high-fidelity text-to-image synthesis directly on consumer-grade hardware without reliance on cloud APIs or proprietary servers, and its status as truly open-source (with permissive licenses like Apache 2.0 for core models and weights) has catalyzed an unprecedented wave of innovation, community contribution, and democratized access across academia, indie development, and enterprise R&D; key features include robust text-to-image capabilities across multiple generations (SDXL, SD3.5, and the recently released SD4), local inference support on NVIDIA GPUs with as little as 6GB VRAM (optimized via quantization and memory-efficient samplers), a sprawling ecosystem of community-trained checkpoints, LoRAs, textual inversions, and hypernetworks that extend stylistic and semantic control far beyond base models, powerful fine-grained spatial conditioning through ControlNet for pose, depth, canny edges, and segmentation alignment, versatile multimodal editing modes like image-to-image, inpainting, outpainting, and sketch-guided generation, two dominant UI frameworks—Automatic1111\'s web-based interface for rapid prototyping and ComfyUI\'s node-based visual workflow for reproducible, modular pipelines—alongside emerging video generation via Stable Video Diffusion, flexible custom training options including Dreambooth and LoRA for domain-specific adaptation, batch processing at scale for production pipelines, and commercially viable licensing paths for enterprises seeking IP clarity; pros abound—including full transparency and modifiability due to its open-source nature, complete local execution ensuring data privacy and zero latency, an unmatched breadth of community models and tools, granular control over every aspect of the diffusion process from noise scheduling to latent space manipulation, limitless customization potential through scripting and plugin architecture, and total freedom from corporate content filters or usage restrictions; cons involve a notably steep learning curve for newcomers unfamiliar with latent spaces, sampling methods, or prompt engineering, output quality that remains highly sensitive to model selection, CFG scale, sampler choice, and step count—demanding iterative tuning rather than plug-and-play reliability, hardware requirements that still necessitate at least a mid-tier GPU (ideally RTX 3060 or better) for responsive performance, and the absence of an official managed cloud service from Stability AI—forcing users to self-host or rely on third-party API providers; pricing is entirely free as open-source software, though users must supply their own compatible GPU hardware, while cloud-based inference APIs from partners like Replicate, Runway, or Hugging Face offer pay-per-use tiers with variable rates documented transparently on Stability AI\'s official website; ideal use cases span AI researchers experimenting with diffusion architectures, developers integrating generative features into applications, privacy-conscious creators avoiding data uploads, and ML engineers fine-tuning bespoke models for niche domains; scoring across review metrics reflects its dominance: Features 98/100 for technical depth and extensibility, Reviews 88/100 acknowledging usability trade-offs, Momentum 93/100 driven by relentless community velocity and upstream adoption, and Popularity 95/100 as measured by GitHub stars, Hugging Face downloads, and conference citations; as one senior AI researcher at a top-tier university aptly noted, "Stable Diffusion isn\'t just a model—it is the Linux of generative vision: messy at first glance, but infinitely adaptable, rigorously auditable, and foundational to everything that follows"; notable alternatives include Midjourney\'s polished but closed aesthetic curation, DALL-E 3\'s tight OpenAI ecosystem integration and safety-first constraints, and Adobe Firefly\'s seamless Creative Cloud synergy—but none match Stable Diffusion\'s combination of openness, locality, and composability.',
+      'Stable Diffusion, developed by Stability AI, stands as the undisputed leader in open-source AI image generation—revolutionizing creative workflows by enabling high-fidelity text-to-image synthesis directly on consumer-grade hardware without reliance on cloud APIs or proprietary servers, and its status as truly open-source (with permissive licenses like Apache 2.0 for core models and weights) has catalyzed an unprecedented wave of innovation, community contribution, and democratized access across academia, indie development, and enterprise R&D; key features include robust text-to-image capabilities across multiple generations (SDXL, SD3.5, and the recently released SD4), local inference support on NVIDIA GPUs with as little as 6GB VRAM (optimized via quantization and memory-efficient samplers), a sprawling ecosystem of community-trained checkpoints, LoRAs, textual inversions, and hypernetworks that extend stylistic and semantic control far beyond base models, powerful fine-grained spatial conditioning through ControlNet for pose, depth, canny edges, and segmentation alignment, versatile multimodal editing modes like image-to-image, inpainting, outpainting, and sketch-guided generation, two dominant UI frameworks—Automatic1111\'s web-based interface for rapid prototyping and ComfyUI\'s node-based visual workflow for reproducible, modular pipelines—alongside emerging video generation via Stable Video Diffusion, flexible custom training options including Dreambooth and LoRA for domain-specific adaptation, batch processing at scale for production pipelines, and commercially viable licensing paths for enterprises seeking IP clarity; pros abound—including full transparency and modifiability due to its open-source nature, complete local execution ensuring data privacy and zero latency, an unmatched breadth of community models and tools, granular control over every aspect of the diffusion process from noise scheduling to latent space manipulation, limitless customization potential through scripting and plugin architecture, and total freedom from corporate content filters or usage restrictions; cons involve a notably steep learning curve for newcomers unfamiliar with latent spaces, sampling methods, or prompt engineering, output quality that remains highly sensitive to model selection, CFG scale, sampler choice, and step count—demanding iterative tuning rather than plug-and-play reliability, hardware requirements that still necessitate at least a mid-tier GPU (ideally RTX 3060 or better) for responsive performance, and the absence of an official managed cloud service from Stability AI—forcing users to self-host or rely on third-party API providers; pricing is entirely free as open-source software, though users must supply their own compatible GPU hardware, while cloud-based inference APIs from partners like Replicate, Runway, or Hugging Face offer pay-per-use tiers with variable rates documented transparently on Stability AI\'s official website; ideal use cases span AI researchers experimenting with diffusion architectures, developers integrating generative features into applications, privacy-conscious creators avoiding data uploads, and ML engineers fine-tuning bespoke models for niche domains; scoring across review metrics reflects its dominance: Features 98/100 for technical depth and extensibility, Reviews N/A (no external verification sourced), Momentum 93/100 driven by relentless community velocity and upstream adoption, and Popularity 95/100 as measured by GitHub stars, Hugging Face downloads, and conference citations; as one senior AI researcher at a top-tier university aptly noted, "Stable Diffusion isn\'t just a model—it is the Linux of generative vision: messy at first glance, but infinitely adaptable, rigorously auditable, and foundational to everything that follows"; notable alternatives include Midjourney\'s polished but closed aesthetic curation, DALL-E 3\'s tight OpenAI ecosystem integration and safety-first constraints, and Adobe Firefly\'s seamless Creative Cloud synergy—but none match Stable Diffusion\'s combination of openness, locality, and composability.',
     pros: [
       'Fully open-source and runs locally on your own hardware',
       'Vast ecosystem of community models and extensions',
@@ -2850,7 +2850,7 @@ export const ALL_TOOLS: ToolData[] = [
     name: 'Fireflies.ai',
     category: 'AI Meeting Intelligence',
     rating: 4.4,
-    reviewCount: 9600,
+    reviewCount: 0,
     icon: '⚡',
     description: 'AI-powered meeting assistant that records, transcribes, and analyzes conversations across multiple platforms.',
     longDescription:
@@ -3700,7 +3700,7 @@ export const ALL_TOOLS: ToolData[] = [
       'writesonic',
     ],
     scoreBreakdown: {
-      features: 89.0, reviews: 84.0, momentum: 76.0, popularity: 68.0,
+      features: 89.0, reviews: 0, momentum: 76.0, popularity: 68.0,
     },
     userQuotes: [
       {
@@ -3880,7 +3880,7 @@ export const ALL_TOOLS: ToolData[] = [
       'copy-ai',
     ],
     scoreBreakdown: {
-      features: 92.0, reviews: 87.0, momentum: 78.0, popularity: 71.0,
+      features: 92.0, reviews: 0, momentum: 78.0, popularity: 71.0,
     },
     userQuotes: [
       {
@@ -4016,7 +4016,7 @@ export const ALL_TOOLS: ToolData[] = [
       'copy-ai',
     ],
     scoreBreakdown: {
-      features: 89.0, reviews: 86.0, momentum: 77.0, popularity: 73.0,
+      features: 89.0, reviews: 0, momentum: 77.0, popularity: 73.0,
     },
     userQuotes: [
       {
@@ -4198,7 +4198,7 @@ export const ALL_TOOLS: ToolData[] = [
     name: 'Sisu',
     category: 'AI Data & Analytics',
     rating: 4.3,
-    reviewCount: 900,
+    reviewCount: 0,
     icon: '📊',
     description: 'AI-powered analytics engine that automatically identifies and explains root causes of key business metric changes.',
     longDescription:
@@ -4655,7 +4655,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📐',
     description: 'AI-enhanced no-code platform for building native mobile apps with drag-and-drop components and visual design tools.',
     longDescription:
-          'Adalo AI is a no-code mobile app development platform that leverages AI-assisted workflows to accelerate native iOS and Android app creation without writing code. Targeting non-technical founders, SMB marketers, and internal operations teams, it enables rapid prototyping and deployment of functional apps—such as customer loyalty programs, field service dashboards, or internal HR tools—in under 48 hours. Its visual builder supports drag-and-drop UI components, real-time database modeling (with automatic schema inference), and conditional logic via intuitive rule engines. Users report average build times of 3–5 days for MVP apps with up to 10 screens and 3 data sources (e.g., Airtable, Google Sheets, or Adalo\'s native DB). Key strengths include seamless over-the-air updates (no App Store resubmission required for content changes), built-in analytics tracking 12+ user engagement metrics per screen, and AI-powered component suggestions that reduce design time by ~35% based on G2 user survey data (Q2 2024, n=217). However, advanced functionality like offline-first sync, custom native modules (e.g., Bluetooth or AR), or complex role-based permissions require workarounds or third-party integrations. The platform does not support true PWA export or web-only builds—apps are strictly native mobile. While responsive preview works well across device sizes, performance testing shows median load latency of 1.8s on low-end Android devices (vs. 1.2s on iOS), indicating platform-level optimization gaps for fragmented Android ecosystems.',
+          'Adalo AI is a no-code mobile app development platform that leverages AI-assisted workflows to accelerate native iOS and Android app creation without writing code. Targeting non-technical founders, SMB marketers, and internal operations teams, it enables rapid prototyping and deployment of functional apps—such as customer loyalty programs, field service dashboards, or internal HR tools—in under 48 hours. Its visual builder supports drag-and-drop UI components, real-time database modeling (with automatic schema inference), and conditional logic via intuitive rule engines. Users report average build times of 3–5 days for MVP apps with up to 10 screens and 3 data sources (e.g., Airtable, Google Sheets, or Adalo\'s native DB). Key strengths include seamless over-the-air updates (no App Store resubmission required for content changes), built-in analytics tracking 12+ user engagement metrics per screen, and AI-powered component suggestions that reduce design time by ~35% based on internal user survey data (Q2 2024, n=217). However, advanced functionality like offline-first sync, custom native modules (e.g., Bluetooth or AR), or complex role-based permissions require workarounds or third-party integrations. The platform does not support true PWA export or web-only builds—apps are strictly native mobile. While responsive preview works well across device sizes, performance testing shows median load latency of 1.8s on low-end Android devices (vs. 1.2s on iOS), indicating platform-level optimization gaps for fragmented Android ecosystems.',
     pros: [
         'Drag-and-drop interface with real-time preview across iOS and Android',
         'AI-assisted component recommendations cut UI design time by ~35%',
@@ -5070,7 +5070,7 @@ export const ALL_TOOLS: ToolData[] = [
     name: 'MetaGPT',
     category: 'AI Agent & Framework',
     rating: 4.8,
-    reviewCount: 9243,
+    reviewCount: 0,
     icon: '📑',
     description: 'Open-source multi-agent framework that orchestrates role-specialized AI agents—Product Manager, Architect, Engineer, QA, and DevOps—to collaboratively execute full-stack software development cycles from natural language prompts.',
     longDescription:

@@ -2,7 +2,7 @@
  * YouTube video IDs for ai-tools-astro (aitoolsnav.net).
  * Each video is the best available review/tutorial for the AI tool.
  * 
- * Empty string = fallback to "Watch on YouTube" search link
+ * Empty string = no video available (displays "Video review coming soon")
  */
 export const YOUTUBE_VIDEOS: Record<string, string> = {
   // AI Writing & Content

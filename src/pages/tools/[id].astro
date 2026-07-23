@@ -16,7 +16,6 @@ const { tool } = Astro.props;
 const relatedTools = ALL_TOOLS
   .filter(t => t.category === tool.category && t.id !== tool.id)
   .slice(0, 4);
-const youtubeQuery = encodeURIComponent(`${tool.name} AI review tutorial`);
 const videoId = YOUTUBE_VIDEOS[tool.id] ?? '';
 const hasVideo = videoId.length > 0;
 const screenshotPath = `/images/screenshots/${tool.id}.png`;
@@ -64,7 +63,6 @@ const screenshotPath = `/images/screenshots/${tool.id}.png`;
 
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
           <a href={tool.websiteUrl} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1; justify-content: center;">Visit Website →</a>
-          <a href={`https://www.youtube.com/results?search_query=${youtubeQuery}`} target="_blank" rel="noopener noreferrer" class="btn" style="flex: 1; justify-content: center;">▶ Watch Reviews</a>
         </div>
       </div>
     </div>
@@ -119,35 +117,33 @@ const screenshotPath = `/images/screenshots/${tool.id}.png`;
               <img src={screenshotPath} alt={`${tool.name} screenshot`} style="width: 100%; height: auto; display: block;" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
               <div style="display:none; padding: 40px; text-align: center; color: var(--text-muted); font-size: 0.875rem;">
                 <div style="font-size: 2rem; margin-bottom: 8px;">🖼️</div>
-                <div>Screenshot coming soon</div>
+                <div>Screenshot unavailable</div>
               </div>
             </div>
           ) : (
             <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--bg-subtle);">
               <div style="padding: 40px; text-align: center; color: var(--text-muted); font-size: 0.875rem;">
                 <div style="font-size: 2rem; margin-bottom: 8px;">🖼️</div>
-                <div>Screenshot coming soon</div>
+                <div>Screenshot unavailable</div>
               </div>
             </div>
           )}
         </section>
 
         <section id="video" style="margin-bottom: 32px; scroll-margin-top: 80px;">
-          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">🎬 Video Review</h2>
+          <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 12px;">🎬 Related Video</h2>
           {hasVideo ? (
             <div style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
               <div style="position: relative; padding-bottom: 56.25%; height: 0; background: var(--bg-subtle);">
                 <iframe src={`https://www.youtube.com/embed/${videoId}`} style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allowfullscreen loading="lazy" title={`${tool.name} video review`}></iframe>
               </div>
             </div>
+            <p style="font-size: 0.7rem; color: var(--text-muted); margin-top: 4px;">Source: YouTube — independent walkthrough of this tool.</p>
           ) : (
             <div style="display: flex; flex-direction: column; gap: 12px; padding: 32px 24px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-subtle); text-align: center;">
               <div style="font-size: 2.5rem;">🎥</div>
-              <div style="font-size: 1rem; font-weight: 600;">Watch "{tool.name}" Reviews on YouTube</div>
-              <p style="font-size: 0.875rem; color: var(--text-secondary); max-width: 400px; margin: 0 auto;">See real users demonstrate and review {tool.name} — hands-on walkthroughs, feature deep-dives, and honest comparisons.</p>
-              <a href={`https://www.youtube.com/results?search_query=${youtubeQuery}`} target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; justify-content: center; gap: 6px; margin-top: 4px;">
-                ▶ Watch on YouTube
-              </a>
+              <div style="font-size: 1rem; font-weight: 600;">Video review coming soon</div>
+              <p style="font-size: 0.875rem; color: var(--text-secondary); max-width: 400px; margin: 0 auto;">Check back for a hands-on video review of {tool.name}.</p>
             </div>
           )}
         </section>
@@ -207,7 +203,7 @@ const screenshotPath = `/images/screenshots/${tool.id}.png`;
         </section>
 
         <section style="border-top: 1px solid var(--border); padding-top: 16px; margin-top: 32px;">
-          <p style="font-size: 0.75rem; color: var(--text-muted);">⚖️ All reviews reflect honest, hands-on evaluations by our team. We do not accept sponsored placements. Some links may be affiliate links — see our <a href="/disclosure">full disclosure</a>.</p>
+          <p style="font-size: 0.75rem; color: var(--text-muted);">⚖️ All reviews reflect honest, hands-on evaluations by our team. We do not accept sponsored placements. See our <a href="/disclosure">full methodology</a>.</p>
         </section>
       </div>
 

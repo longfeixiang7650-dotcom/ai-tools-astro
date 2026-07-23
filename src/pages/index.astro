@@ -25,7 +25,6 @@ ALL_TOOLS.forEach(t => {
 // Stats
 const totalTools = ALL_TOOLS.length;
 const avgRating = (ALL_TOOLS.reduce((s, t) => s + t.rating, 0) / totalTools).toFixed(1);
-const totalReviews = ALL_TOOLS.reduce((s, t) => s + t.reviewCount, 0);
 
 // Editor's picks - highest rated from 4 key AI categories
 const keyCategories = ['AI Writing & Content', 'AI Image & Design', 'AI Code Assistant', 'AI Video & Audio'];
@@ -48,10 +47,6 @@ for (const cat of keyCategories) {
       <div style="text-align: center; padding: 20px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-card);">
         <div style="font-size: 1.75rem; font-weight: 800; color: var(--text);">{avgRating}</div>
         <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">Avg Rating</div>
-      </div>
-      <div style="text-align: center; padding: 20px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-card);">
-        <div style="font-size: 1.75rem; font-weight: 800; color: var(--text);">{(totalReviews / 1000).toFixed(0)}k</div>
-        <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">User Reviews</div>
       </div>
       <div style="text-align: center; padding: 20px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--bg-card);">
         <div style="font-size: 1.75rem; font-weight: 800; color: var(--text);">{BLOG_POSTS.length}</div>
@@ -208,16 +203,8 @@ for (const cat of keyCategories) {
           </p>
         </div>
 
-        <!-- Newsletter Signup (placeholder for future) -->
-        <div class="sidebar-section" style="background: var(--bg-subtle); border-radius: 8px; padding: 16px; border: 1px solid var(--border);">
-          <h3 class="sidebar-title">Stay Updated</h3>
-          <p style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 10px;">Get notified when we publish new reviews.</p>
-          <div style="display: flex; gap: 6px;">
-            <input type="email" placeholder="your@email.com" disabled style="flex: 1; padding: 6px 10px; border: 1px solid var(--border); border-radius: 4px; font-size: 0.75rem; background: var(--bg-card);" />
-            <button class="btn" disabled style="font-size: 0.75rem; padding: 6px 10px;">Subscribe</button>
-          </div>
-          <p style="font-size: 0.625rem; color: var(--text-muted); margin-top: 6px;">Coming soon — enter your email to join our mailing list.</p>
-        </div>
+        <!-- Newsletter Signup removed - will be added when launched -->
+        <!-- Removed while building initial content library -->
       </aside>
     </div>
   </div>
