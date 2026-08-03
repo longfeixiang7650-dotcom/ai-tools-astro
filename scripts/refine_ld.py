@@ -226,9 +226,9 @@ if __name__ == '__main__':
     import os
     os.chdir('/home/edi/ai-tools-astro')
     ts = [
-        {'id': 'chatgpt', 'name': 'ChatGPT', 'category': 'AI Writing & Content'},
-        {'id': 'polymer', 'name': 'Polymer', 'category': 'AI Data & Analytics'},
-        {'id': 'runway', 'name': 'Runway', 'category': 'AI Image & Design'},
+        {'id': 'langchain', 'name': 'LangChain', 'category': 'AI Agent & Framework'},
+        {'id': 'frase', 'name': 'Frase', 'category': 'AI Writing & Content'},
+        {'id': 'cognigy', 'name': 'Cognigy', 'category': 'AI Marketing & SEO'},
     ]
     content = open(TOOLS_FILE).read()
     for ti in ts:
