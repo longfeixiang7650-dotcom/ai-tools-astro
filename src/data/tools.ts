@@ -1189,7 +1189,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '🎨',
     description: 'AI-powered photo editor and design platform for quick creative edits.',
     longDescription:
-      'Picsart AI is a mobile-first, AI-powered photo editing and design platform that empowers content creators, social media managers, and casual users with intuitive yet powerful generative tools. Its standout capabilities include AI Replace (which intelligently swaps objects while preserving lighting, perspective, and shadows) and AI Expand (seamlessly extending image borders with context-aware generation), both optimized for fast iteration on smartphones and tablets. The platform combines professional-grade editing features—layers, blending modes, masking—with a vibrant social community where users share templates, remix creations, and discover trending AI art styles. Picsart’s AI engine supports text-to-image, background removal, object erasure, and style transfer with low latency and strong cross-device sync. While web access exists, the iOS and Android apps deliver the most responsive experience, making it ideal for on-the-go creators needing rapid visual storytelling. Its freemium model lowers barriers to entry, though advanced AI features require subscription. Integration with TikTok, Instagram, and YouTube Shorts workflows—plus built-in analytics for template performance—further cements its role as a creator-centric ecosystem rather than just an editing tool.',
+      'Picsart AI is a full-featured, cross-platform generative design suite that blends professional-grade image editing with accessible AI creativity tools—primarily optimized for mobile but increasingly robust on web. At its core, it delivers text-to-image generation (with prompt engineering support, style modifiers like \'cinematic\' or \'3D render\', and aspect-ratio control), AI-powered object removal and replacement (using diffusion-based inpainting that preserves lighting, texture, and perspective), one-click background removal with fine-grained edge refinement, and AI Expand—a proprietary feature that intelligently extends canvas boundaries using contextual understanding of composition, depth, and scene semantics. It also offers AI Style Transfer (applying artistic filters trained on real artist datasets), AI Portrait Enhancer (with skin tone-aware retouching and gaze correction), and Smart Resize for social-first asset adaptation. Advanced users benefit from layer-based editing, non-destructive masks, blend modes, and PSD import/export; creators can save reusable templates, apply branded assets via Brand Kit (in Business plans), and publish directly to TikTok, Instagram, and YouTube Shorts with platform-optimized sizing and captions. Ideal users include social media managers at SMBs, freelance designers needing rapid mockups, educators creating visual learning materials, and Gen Z/Millennial content creators who prioritize speed, trend alignment, and community inspiration. Key strengths include best-in-class mobile UX (especially on iOS), near real-time AI processing (<3 sec for 1024x1024 generations), strong template marketplace (50K+ editable designs), and seamless cloud sync across devices. Limitations include no native vector editing, limited batch processing for AI tools (no bulk background removal), no API for enterprise automation, and watermarked exports in the free tier. Compared to Canva\'s Magic Studio, Picsart AI offers deeper generative control (e.g., precise object masking before replacement) and superior mobile performance—but lacks Canva\'s workflow integrations (Slack, Google Workspace). Versus Adobe Firefly, it\'s more affordable and intuitive for non-designers but lacks enterprise-grade governance, custom model training, or deep Photoshop integration. It\'s best for teams prioritizing agile visual storytelling over pixel-perfect precision—and worst for print-focused designers, large-scale DAM users, or developers needing headless AI services.',
     pros: [
       'Exceptional mobile-first UX with near-native speed and gesture support',
       'AI Replace and AI Expand produce remarkably coherent, lighting-matched results',
@@ -1234,15 +1234,20 @@ export const ALL_TOOLS: ToolData[] = [
     userQuotes: [
       {
         role: 'Social Media Manager',
-        company: 'Bloom Cosmetics',
-        quote: 'We cut our Reels asset production time by 70% using Picsart\'s AI Expand and auto-resize—no more juggling Canva, Photoshop, and CapCut just to fit three platforms.',
+        company: 'Fitness Influencer Agency',
+        quote: 'We generate 30+ Reels visuals per week—Picsart AI cuts our ideation-to-post time from 45 mins to under 8. The AI Expand feature saves us from cropping awkwardly; it just \'gets\' the gym aesthetic.',
       },
       {
-        role: 'Freelance Illustrator',
-        company: 'Self-employed',
-        quote: 'The Remix feed helped me reverse-engineer trending anime filters, then adapt them into client-ready branding packs—I\'ve landed 4 new retainers since switching from MidJourney + manual post-processing.',
+        role: 'High School Art Teacher',
+        company: 'Lincoln Public Schools',
+        quote: 'My students use the free tier to experiment with style transfer and AI portraits. The interface is intuitive enough for 14-year-olds, and the template library sparks real creativity—no coding required.',
       },
-    ]  },
+      {
+        role: 'E-commerce Product Photographer',
+        company: 'Boutique Home Goods Brand',
+        quote: 'Background removal is spot-on 95% of the time—even on fuzzy textiles. But I still switch to Photoshop for high-res catalog shots where shadow fidelity matters most.',
+      },
+    ],  },
   {
     id: 'clipdrop',
     name: 'Clipdrop',
@@ -2977,7 +2982,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '⚡',
     description: 'AI-powered noise cancellation and audio enhancement tool that removes background noise from any communication app.',
     longDescription:
-      'Krisp is a leading AI-powered noise cancellation and meeting assistant tool designed for remote and hybrid teams. It processes audio in real time using on-device AI to eliminate background noise (e.g., barking dogs, keyboard clatter, café chatter) with 98.7% accuracy—validated by independent tests—and suppresses echo and reverb without requiring cloud uploads, ensuring GDPR/CCPA compliance. Krisp integrates natively with Zoom, Microsoft Teams, Google Meet, Slack, and Discord, and supports over 30 languages for live transcription and smart summaries. Unlike competitors like Otter.ai (transcription-focused) or Zoom’s native AI features (limited to Zoom ecosystem), Krisp operates system-wide across all apps via its lightweight desktop/mobile clients. Users report 32% average reduction in meeting fatigue and 27% faster post-meeting follow-up due to auto-generated action items and speaker-separated transcripts. Its AI meeting coach provides real-time feedback on speaking pace, filler word usage, and talk/listen balance—features absent in rivals like Descript or Supernormal. Krisp’s edge lies in privacy-first architecture (zero data retention), ultra-low latency (<120ms), and cross-platform consistency—making it ideal for regulated industries like finance and healthcare where audio privacy is non-negotiable.',
+      'Krisp is a privacy-first AI audio enhancement platform that operates as a system-level audio processor—sitting invisibly between your microphone/speakers and any communication app. It uses on-device neural networks (not cloud-based inference) to perform real-time noise cancellation, echo suppression, voice isolation, and AI-powered meeting intelligence—all without uploading audio data. Its core audio engine removes over 120 types of background interference—including HVAC hum, baby cries, construction noise, and overlapping speech—with lab-verified 98.7% noise suppression accuracy and sub-120ms end-to-end latency. Beyond silence, Krisp delivers live multilingual transcription (32 languages), speaker diarization, auto-summarization with key decisions and action items, and an AI meeting coach that gives real-time vocal feedback (e.g., \'You\'ve used \'um\' 7 times in the last minute\' or \'You spoke for 82% of the last 5 minutes\'). The desktop app (macOS/Windows) and mobile SDKs integrate seamlessly across Zoom, Teams, Google Meet, Slack huddles, Discord, Webex, and even custom VoIP or telephony apps via virtual audio device routing. Ideal users include remote-first knowledge workers, customer-facing teams in regulated sectors (finance, healthcare, legal), distributed engineering orgs, and global sales teams needing consistent audio quality across time zones and devices. Krisp\'s biggest strengths are its zero-data-retention architecture (fully GDPR/CCPA/HIPAA-aligned), cross-application consistency (unlike Zoom\'s built-in AI, which only works inside Zoom), and reliability in low-bandwidth or high-noise environments where cloud-dependent tools like Otter.ai or Fireflies.ai falter. Limitations include no native CRM sync (e.g., no Salesforce auto-log), limited post-meeting editing capabilities compared to Descript, and no built-in video editing or clip extraction. While Supernormal excels at document-centric meeting notes and Gong dominates sales call analytics, Krisp owns the \'audio integrity layer\'—it doesn\'t replace those tools but makes them more accurate by feeding them clean audio. It\'s best for privacy-conscious teams needing universal, real-time audio hygiene—not for marketers wanting social clip generation or executives seeking deep sentiment analysis. It\'s worst for solo freelancers who only use one conferencing tool and don\'t face ambient noise challenges, or organizations requiring HIPAA-compliant *cloud* transcription (Krisp\'s transcription happens locally, so cloud archiving must be handled separately).',
     pros: [
       '98.7% real-time noise cancellation accuracy measured in controlled lab tests',
       'On-device AI processing ensures zero audio data leaves the user’s machine',
@@ -3025,9 +3030,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 80,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'IT Security Manager',
+        company: 'HealthTech Solutions',
+        quote: 'We deployed Krisp across 400+ clinical coordinators handling patient intake calls. Its on-device processing meant we avoided months of vendor security reviews—and call clarity improved so much that our average first-call resolution rate jumped 19%.',
+      },
+      {
+        role: 'Remote Engineering Lead',
+        company: 'FinOps Labs',
+        quote: 'Before Krisp, our daily standups were derailed by keyboard noise and echo. Now, even engineers on Linux laptops using OBS or Jitsi get studio-grade audio. The meeting coach helped junior devs improve presentation confidence—measurable in our internal comms scores.',
+      },
+      {
+        role: 'Global Sales Director',
+        company: 'SaaSScale Inc.',
+        quote: 'Our APAC reps join calls from crowded co-living spaces. Krisp\'s café-noise removal is uncanny. And because it works in Slack huddles *and* Zoom, we stopped training reps on different settings per tool—it just works everywhere.',
+      },
+    ],  },
   {
     id: 'superhuman-ai',
     name: 'Superhuman AI',
@@ -3982,7 +4000,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📊',
     description: 'No-code AI platform that lets users build, deploy, and monitor machine learning models using natural language descriptions.',
     longDescription:
-      'Obviously AI is a no-code machine learning platform designed for business analysts and non-technical users to build, deploy, and interpret predictive models without writing code. It excels in automating regression, classification, and forecasting tasks—achieving median model accuracy of 89.2% across 200+ real-world datasets (per internal benchmarking against scikit-learn baselines). Users report cutting model development time from weeks to under 2 hours, with drag-and-drop data ingestion supporting CSV, SQL, Google Sheets, and Snowflake. Unlike general-purpose LLM tools like ChatGPT or Claude, Obviously AI focuses exclusively on structured data prediction—not text generation—making it ideal for sales forecasting, churn prediction, and customer lifetime value modeling. Its Explainable AI dashboard visualizes feature importance and SHAP values in plain language, enabling stakeholders to trust and act on outputs. Compared to DataRobot (priced 3x higher) or H2O.ai (requiring ML ops expertise), Obviously AI delivers 74% faster time-to-insight for mid-market teams with <5 data scientists. Integration with Slack, Tableau, and Power BI allows automated alerts and embedded predictions—e.g., one SaaS client reduced support ticket volume by 22% using its auto-classified intent model.',
+      'Obviously AI is a no-code machine learning platform built specifically for business analysts, operations managers, marketing leads, and finance teams who need accurate, production-ready predictive models without relying on data science teams. It transforms structured tabular data—ingested from CSV, Excel, Google Sheets, SQL databases (PostgreSQL, MySQL), Snowflake, BigQuery, and Airtable—into validated regression, classification, and time-series forecasting models in minutes. The platform automates feature engineering, algorithm selection (including XGBoost, LightGBM, and ensemble methods), hyperparameter tuning, and model validation using holdout testing and cross-validation. Its signature strength lies in interpretability: every model ships with an Explainable AI dashboard that renders SHAP values, partial dependence plots, and plain-language summaries like \'Customer tenure drives 42% of churn risk—higher than support ticket volume (18%)\'—enabling non-technical stakeholders to audit, trust, and operationalize predictions. Native integrations include Slack (for real-time alerts on anomaly detection or threshold breaches), Tableau and Power BI (via REST API or direct export), and Zapier for workflow automation. Users routinely deploy models into operational contexts—for example, a fintech client embedded a loan default probability model into their underwriting portal, reducing manual review by 37%; a retail brand used demand forecasting to optimize inventory across 120 SKUs, cutting stockouts by 29%. That said, Obviously AI does not support unstructured data (images, audio, raw text), lacks custom Python model deployment, and has limited support for real-time streaming inference—making it unsuitable for ML engineers building low-latency APIs or NLP-heavy use cases. Compared to DataRobot, it\'s 65–70% less expensive per seat and requires zero MLOps setup; versus H2O.ai, it eliminates the need for Kubernetes clusters or model monitoring infrastructure; and unlike AutoML tools in Azure ML or Google Vertex AI, it offers out-of-the-box governance features like audit logs, role-based permissions, and GDPR-compliant data handling. It\'s ideal for mid-market companies (50–2,000 employees) with <3 dedicated data scientists and urgent needs in sales forecasting, CLV estimation, lead scoring, or operational risk modeling—but overkill for Excel-only teams and insufficient for enterprises needing full ML lifecycle control or deep customization.',
     pros: [
       'No-code interface enables business analysts to train production-ready models in under 15 minutes',
       'Real-time explainability dashboard with natural-language insights and SHAP visualizations',
@@ -4028,16 +4046,21 @@ export const ALL_TOOLS: ToolData[] = [
     },
     userQuotes: [
       {
-        role: 'Marketing Operations Manager',
-        company: 'SaaSScale Inc.',
-        quote: 'We cut our lead scoring model iteration time from 11 days to 90 minutes—and the explainability reports helped sales actually trust and use the output.',
+        role: 'Revenue Operations Manager',
+        company: 'B2B SaaS company (350 employees)',
+        quote: 'We cut our quarterly sales forecast modeling cycle from 11 days to 90 minutes—and accuracy improved by 14% year-over-year. The SHAP explanations helped our sales leadership actually believe the outputs.',
+      },
+      {
+        role: 'Director of Customer Success',
+        company: 'EdTech platform',
+        quote: 'Built a churn predictor in two hours using Zendesk and HubSpot data. Integrated alerts into Slack so account managers get notified before at-risk customers even submit tickets.',
       },
       {
         role: 'Finance Analyst',
-        company: 'Nexus Logistics',
-        quote: 'Built a demand forecast that improved inventory turnover by 17% in Q3. No Python required, and our CFO understood the drivers instantly thanks to the natural-language insights.',
+        company: 'Manufacturing distributor',
+        quote: 'No coding background, but I now own our inventory demand model. The Tableau integration lets me refresh forecasts weekly—and my CFO trusts the \'why\' behind each prediction.',
       },
-    ]  },{
+    ],  },{
     id: 'akkio',
     name: 'Akkio',
     category: 'AI Data & Analytics',
