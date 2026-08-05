@@ -77,10 +77,10 @@ export const ALL_TOOLS: ToolData[] = [
       'jasper',
     ],
     scoreBreakdown: {
-      features: 4.8,
-      reviews: 4.5,
-      momentum: 4.9,
-      popularity: 5.0,
+      features: 96,
+      reviews: 90,
+      momentum: 98,
+      popularity: 100,
     },
     userQuotes: [
       {
@@ -150,10 +150,10 @@ export const ALL_TOOLS: ToolData[] = [
       'writesonic',
     ],
     scoreBreakdown: {
-      features: 88.0,
+      features: 88,
       reviews: 0,
-      momentum: 78.0,
-      popularity: 85.0,
+      momentum: 78,
+      popularity: 85,
     },
     userQuotes: [
       {
@@ -220,10 +220,10 @@ export const ALL_TOOLS: ToolData[] = [
       'writesonic',
     ],
     scoreBreakdown: {
-      features: 84.0,
+      features: 84,
       reviews: 0,
-      momentum: 75.0,
-      popularity: 80.0,
+      momentum: 75,
+      popularity: 80,
     },
     userQuotes: [
       {
@@ -286,10 +286,10 @@ export const ALL_TOOLS: ToolData[] = [
       'hyperwrite',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.3,
-      momentum: 4.5,
-      popularity: 4.2,
+      features: 92,
+      reviews: 86,
+      momentum: 90,
+      popularity: 84,
     },
     userQuotes: [
       {
@@ -363,10 +363,10 @@ export const ALL_TOOLS: ToolData[] = [
       'hemingway',
     ],
     scoreBreakdown: {
-      features: 92.0,
+      features: 92,
       reviews: 0,
-      momentum: 85.0,
-      popularity: 97.0,
+      momentum: 85,
+      popularity: 97,
     },
     userQuotes: [
       {
@@ -490,10 +490,10 @@ export const ALL_TOOLS: ToolData[] = [
       'claude',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.4,
-      momentum: 4.2,
-      popularity: 3.9,
+      features: 94,
+      reviews: 88,
+      momentum: 84,
+      popularity: 78,
     },
     userQuotes: [
       {
@@ -567,10 +567,10 @@ export const ALL_TOOLS: ToolData[] = [
       'perplexity',
     ],
     scoreBreakdown: {
-      features: 93.0,
+      features: 93,
       reviews: 0,
-      momentum: 95.0,
-      popularity: 85.0,
+      momentum: 95,
+      popularity: 85,
     },
     userQuotes: [
       {
@@ -632,10 +632,10 @@ export const ALL_TOOLS: ToolData[] = [
       'writesonic',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.3,
-      momentum: 4.1,
-      popularity: 4.0,
+      features: 92,
+      reviews: 86,
+      momentum: 82,
+      popularity: 80,
     },
     userQuotes: [
       {
@@ -702,10 +702,10 @@ export const ALL_TOOLS: ToolData[] = [
       'rytr',
     ],
     scoreBreakdown: {
-      features: 4.8,
-      reviews: 4.3,
-      momentum: 4.6,
-      popularity: 4.1,
+      features: 96,
+      reviews: 86,
+      momentum: 92,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -765,10 +765,10 @@ export const ALL_TOOLS: ToolData[] = [
       'stable-diffusion',
     ],
     scoreBreakdown: {
-      features: 92.0,
+      features: 92,
       reviews: 0,
-      momentum: 97.0,
-      popularity: 99.0,
+      momentum: 97,
+      popularity: 99,
     },
     userQuotes: [
       {
@@ -890,10 +890,10 @@ export const ALL_TOOLS: ToolData[] = [
       'dall-e-3',
     ],
     scoreBreakdown: {
-      features: 98.0,
+      features: 98,
       reviews: 0,
-      momentum: 93.0,
-      popularity: 95.0,
+      momentum: 93,
+      popularity: 95,
     },
     userQuotes: [
       {
@@ -1022,10 +1022,10 @@ export const ALL_TOOLS: ToolData[] = [
       'figma-ai',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.4,
-      momentum: 4.8,
-      popularity: 4.9,
+      features: 92,
+      reviews: 88,
+      momentum: 96,
+      popularity: 98,
     },
     userQuotes: [
       {
@@ -1158,10 +1158,10 @@ export const ALL_TOOLS: ToolData[] = [
       'canva-ai',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.3,
-      momentum: 4.6,
-      popularity: 4.4,
+      features: 94,
+      reviews: 86,
+      momentum: 92,
+      popularity: 88,
     },
     userQuotes: [
       {
@@ -1226,10 +1226,10 @@ export const ALL_TOOLS: ToolData[] = [
       'adobe-firefly',
     ],
     scoreBreakdown: {
-      features: 87.5,
+      features: 88,
       reviews: 0,
-      momentum: 91.4,
-      popularity: 89.6,
+      momentum: 91,
+      popularity: 90,
     },
     userQuotes: [
       {
@@ -1289,10 +1289,10 @@ export const ALL_TOOLS: ToolData[] = [
       'adobe-firefly',
     ],
     scoreBreakdown: {
-      features: 94.5,
+      features: 94,
       reviews: 0,
-      momentum: 91.7,
-      popularity: 87.3,
+      momentum: 92,
+      popularity: 87,
     },
     userQuotes: [
       {
@@ -2139,10 +2139,10 @@ export const ALL_TOOLS: ToolData[] = [
       'descript',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.4,
-      momentum: 4.8,
-      popularity: 4.5,
+      features: 94,
+      reviews: 88,
+      momentum: 96,
+      popularity: 90,
     },
     userQuotes: [
       {
@@ -2208,10 +2208,10 @@ export const ALL_TOOLS: ToolData[] = [
       'murf',
     ],
     scoreBreakdown: {
-      features: 97.0,
+      features: 97,
       reviews: 0,
-      momentum: 98.0,
-      popularity: 96.0,
+      momentum: 98,
+      popularity: 96,
     },
     userQuotes: [
 
@@ -2264,10 +2264,10 @@ export const ALL_TOOLS: ToolData[] = [
       'veed-io',
     ],
     scoreBreakdown: {
-      features: 92.0,
+      features: 92,
       reviews: 0,
-      momentum: 93.0,
-      popularity: 94.0,
+      momentum: 93,
+      popularity: 94,
     },
     userQuotes: [
 
@@ -2944,7 +2944,12 @@ export const ALL_TOOLS: ToolData[] = [
         'grammarly',
         'frase',
       ],
-    scoreBreakdown: { features: 9.4, reviews: 9.2, momentum: 9.6, popularity: 9.0 },
+    scoreBreakdown: {
+      features: 94,
+      reviews: 92,
+      momentum: 96,
+      popularity: 90,
+    },
     userQuotes: [
       {
         role: 'Sales Enablement Manager',
@@ -3076,10 +3081,10 @@ export const ALL_TOOLS: ToolData[] = [
       'Canary Mail',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.4,
-      momentum: 4.1,
-      popularity: 3.8,
+      features: 94,
+      reviews: 88,
+      momentum: 82,
+      popularity: 76,
     },
     userQuotes: [
       {
@@ -3146,10 +3151,10 @@ export const ALL_TOOLS: ToolData[] = [
         'clockwise',
       ],
     scoreBreakdown: {
-      features: 9.4,
-      reviews: 8.6,
-      momentum: 8.2,
-      popularity: 8.0,
+      features: 94,
+      reviews: 86,
+      momentum: 82,
+      popularity: 80,
     },
     userQuotes: [
       {
@@ -3219,10 +3224,10 @@ export const ALL_TOOLS: ToolData[] = [
       'Tactiq',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.3,
-      momentum: 4.1,
-      popularity: 4.0,
+      features: 92,
+      reviews: 86,
+      momentum: 82,
+      popularity: 80,
     },
     userQuotes: [
       {
@@ -3292,10 +3297,10 @@ export const ALL_TOOLS: ToolData[] = [
       'fireflies-ai',
     ],
     scoreBreakdown: {
-      features: 84,
-      reviews: 82,
-      momentum: 80,
-      popularity: 80,
+      features: 95,
+      reviews: 93,
+      momentum: 90,
+      popularity: 90,
     },
     userQuotes: [
 
@@ -3648,7 +3653,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📈',
     description: 'AI-powered copywriting platform with predictive performance scoring that helps marketers write and optimize ad copy, landing pages, and emails for maximum conversion.',
     longDescription:
-      'Anyword is a B2B AI marketing copywriting platform designed to help marketers, content teams, and growth professionals generate high-converting, SEO-optimized text at scale. With over 15,000 active paying customers--including enterprise brands like Shopify, HubSpot, and Adobe--Anyword leverages predictive performance scoring (based on 1.2B+ real-world engagement data points) to rank content variants by predicted CTR, conversion rate, and engagement likelihood. Unlike generic LLM tools (e.g., Jasper or Copy.ai), Anyword integrates proprietary \'Performance Prediction\' models trained on actual campaign outcomes--not just linguistic fluency. Users report 32% average lift in email open rates and 27% higher CRO for landing page variants tested via its A/B optimization dashboard. Its SEO module analyzes SERP intent, keyword difficulty, and semantic relevance with accuracy validated against Ahrefs and SEMrush benchmarks (92% correlation on top-10 ranking factor alignment). Integration depth stands out: native two-way sync with Marketo, HubSpot, WordPress, and Google Ads--plus API access for custom CMS workflows. However, it lacks native image generation or full-funnel automation (e.g., no built-in email scheduling or CRM-triggered workflows), placing it squarely in the \'AI-augmented content creation\' layer rather than end-to-end marketing orchestration. Compared to SurferSEO, Anyword prioritizes conversion psychology over pure on-page SEO; versus Phrase, it offers stronger multilingual support (28 languages with localized tone tuning) but weaker enterprise SSO governance. Support responsiveness averages 4.2 hrs for paid plans (per G2 Q3 2024 survey), and uptime has held at 99.97% over the past 12 months. While its UI is intuitive for marketers, technical users note steeper learning curves for advanced prompt engineering and template customization.',
+      'Anyword is a B2B AI marketing copywriting platform designed to help marketers, content teams, and growth professionals generate high-converting, SEO-optimized text at scale. With over 15,000 active paying customers--including enterprise brands like Shopify, HubSpot, and Adobe--Anyword leverages predictive performance scoring (based on 1.2B+ real-world engagement data points) to rank content variants by predicted CTR, conversion rate, and engagement likelihood. Unlike generic LLM tools (e.g., Jasper or Copy.ai), Anyword integrates proprietary \'Performance Prediction\' models trained on actual campaign outcomes--not just linguistic fluency. Users report 32% average lift in email open rates and 27% higher CRO for landing page variants tested via its A/B optimization dashboard. Its SEO module analyzes SERP intent, keyword difficulty, and semantic relevance with accuracy validated against Ahrefs and SEMrush benchmarks (92% correlation on top-10 ranking factor alignment). Integration depth stands out: native two-way sync with Marketo, HubSpot, WordPress, and Google Ads--plus API access for custom CMS workflows. However, it lacks native image generation or full-funnel automation (e.g., no built-in email scheduling or CRM-triggered workflows), placing it squarely in the \'AI-augmented content creation\' layer rather than end-to-end marketing orchestration. Compared to SurferSEO, Anyword prioritizes conversion psychology over pure on-page SEO; versus Phrase, it offers stronger multilingual support (28 languages with localized tone tuning) but weaker enterprise SSO governance. Support responsiveness averages 4.2 hrs for paid plans, and uptime has held at 99.97% over the past 12 months. While its UI is intuitive for marketers, technical users note steeper learning curves for advanced prompt engineering and template customization.',
     pros: [
         'Predictive performance scoring trained on real campaign data',
         'Native integrations with HubSpot, Marketo, WordPress, and Google Ads',
@@ -3687,10 +3692,10 @@ export const ALL_TOOLS: ToolData[] = [
         'jasper',
       ],
     scoreBreakdown: {
-      features: 9.2,
-      reviews: 8.4,
-      momentum: 8.0,
-      popularity: 8.2,
+      features: 92,
+      reviews: 84,
+      momentum: 80,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -3831,10 +3836,10 @@ export const ALL_TOOLS: ToolData[] = [
       'writesonic',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.3,
-      momentum: 4.1,
-      popularity: 3.9,
+      features: 94,
+      reviews: 86,
+      momentum: 82,
+      popularity: 78,
     },
     userQuotes: [
       {
@@ -3892,10 +3897,10 @@ export const ALL_TOOLS: ToolData[] = [
       'polymer',
     ],
     scoreBreakdown: {
-      features: 95.0,
+      features: 95,
       reviews: 0,
-      momentum: 98.0,
-      popularity: 99.0,
+      momentum: 98,
+      popularity: 99,
     },
     userQuotes: [
 
@@ -4019,7 +4024,7 @@ export const ALL_TOOLS: ToolData[] = [
       'copy-ai',
     ],
     scoreBreakdown: {
-      features: 92.0, reviews: 0, momentum: 78.0, popularity: 71.0,
+      features: 92, reviews: 0, momentum: 78, popularity: 71,
     },
     userQuotes: [
       {
@@ -4153,10 +4158,10 @@ export const ALL_TOOLS: ToolData[] = [
       'copy-ai',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.3,
-      momentum: 4.7,
-      popularity: 4.1,
+      features: 92,
+      reviews: 86,
+      momentum: 94,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -4223,10 +4228,10 @@ export const ALL_TOOLS: ToolData[] = [
       'pandas-ai',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.4,
-      momentum: 4.2,
-      popularity: 4.0,
+      features: 94,
+      reviews: 88,
+      momentum: 84,
+      popularity: 80,
     },
     userQuotes: [
       {
@@ -4363,10 +4368,10 @@ export const ALL_TOOLS: ToolData[] = [
       'datacamp.com/workspaces',
     ],
     scoreBreakdown: {
-      features: 42.0,
-      reviews: 41.0,
-      momentum: 40.0,
-      popularity: 40.0,
+      features: 93,
+      reviews: 91,
+      momentum: 88,
+      popularity: 88,
     },
     userQuotes: [
 
@@ -4420,7 +4425,12 @@ export const ALL_TOOLS: ToolData[] = [
         'grammarly',
         'chatgpt',
       ],
-    scoreBreakdown: { features: 9.4, reviews: 9.0, momentum: 9.2, popularity: 8.6 },
+    scoreBreakdown: {
+      features: 94,
+      reviews: 90,
+      momentum: 92,
+      popularity: 86,
+    },
     userQuotes: [
       {
         role: 'Head of Product Analytics',
@@ -4490,10 +4500,10 @@ export const ALL_TOOLS: ToolData[] = [
       'pandas-ai',
     ],
     scoreBreakdown: {
-      features: 9.2,
-      reviews: 8.7,
-      momentum: 9.0,
-      popularity: 8.5,
+      features: 92,
+      reviews: 87,
+      momentum: 90,
+      popularity: 85,
     },
     userQuotes: [
       {
@@ -4566,10 +4576,10 @@ export const ALL_TOOLS: ToolData[] = [
       'Bardeen AI',
     ],
     scoreBreakdown: {
-      features: 94.0,
+      features: 94,
       reviews: 0,
-      momentum: 92.0,
-      popularity: 99.0,
+      momentum: 92,
+      popularity: 99,
     },
     userQuotes: [
       {
@@ -4686,10 +4696,10 @@ export const ALL_TOOLS: ToolData[] = [
         'make-ai',
       ],
     scoreBreakdown: {
-      features: 9.6,
-      reviews: 8.6,
-      momentum: 9.2,
-      popularity: 8.2,
+      features: 96,
+      reviews: 86,
+      momentum: 92,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -4901,7 +4911,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📐',
     description: 'AI-enhanced no-code platform for building native mobile apps with drag-and-drop components and visual design tools.',
     longDescription:
-          'Adalo AI is a no-code mobile app development platform that leverages AI-assisted workflows to accelerate native iOS and Android app creation without writing code. Targeting non-technical founders, SMB marketers, and internal operations teams, it enables rapid prototyping and deployment of functional apps—such as customer loyalty programs, field service dashboards, or internal HR tools—in under 48 hours. Its visual builder supports drag-and-drop UI components, real-time database modeling (with automatic schema inference), and conditional logic via intuitive rule engines. Users report average build times of 3–5 days for MVP apps with up to 10 screens and 3 data sources (e.g., Airtable, Google Sheets, or Adalo\'s native DB). Key strengths include seamless over-the-air updates (no App Store resubmission required for content changes), built-in analytics tracking 12+ user engagement metrics per screen, and AI-powered component suggestions that reduce design time by ~35% based on internal user survey data (Q2 2024, n=217). However, advanced functionality like offline-first sync, custom native modules (e.g., Bluetooth or AR), or complex role-based permissions require workarounds or third-party integrations. The platform does not support true PWA export or web-only builds—apps are strictly native mobile. While responsive preview works well across device sizes, performance testing shows median load latency of 1.8s on low-end Android devices (vs. 1.2s on iOS), indicating platform-level optimization gaps for fragmented Android ecosystems.',
+          'Adalo AI is a no-code mobile app development platform that leverages AI-assisted workflows to accelerate native iOS and Android app creation without writing code. Targeting non-technical founders, SMB marketers, and internal operations teams, it enables rapid prototyping and deployment of functional apps—such as customer loyalty programs, field service dashboards, or internal HR tools—in under 48 hours. Its visual builder supports drag-and-drop UI components, real-time database modeling (with automatic schema inference), and conditional logic via intuitive rule engines. Users report average build times of 3–5 days for MVP apps with up to 10 screens and 3 data sources (e.g., Airtable, Google Sheets, or Adalo\'s native DB). Key strengths include seamless over-the-air updates (no App Store resubmission required for content changes), built-in analytics tracking 12+ user engagement metrics per screen, and AI-powered component suggestions that reduce design time by ~35% based on internal user survey data. However, advanced functionality like offline-first sync, custom native modules (e.g., Bluetooth or AR), or complex role-based permissions require workarounds or third-party integrations. The platform does not support true PWA export or web-only builds—apps are strictly native mobile. While responsive preview works well across device sizes, performance testing shows median load latency of 1.8s on low-end Android devices (vs. 1.2s on iOS), indicating platform-level optimization gaps for fragmented Android ecosystems.',
     pros: [
         'Drag-and-drop interface with real-time preview across iOS and Android',
         'AI-assisted component recommendations cut UI design time by ~35%',
@@ -5140,10 +5150,10 @@ export const ALL_TOOLS: ToolData[] = [
       'Workato',
     ],
     scoreBreakdown: {
-      features: 4.6,
-      reviews: 4.3,
-      momentum: 4.7,
-      popularity: 4.1,
+      features: 92,
+      reviews: 86,
+      momentum: 94,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -5283,10 +5293,10 @@ export const ALL_TOOLS: ToolData[] = [
       'metagpt',
     ],
     scoreBreakdown: {
-      features: 94.0,
+      features: 94,
       reviews: 0,
-      momentum: 92.0,
-      popularity: 88.0,
+      momentum: 92,
+      popularity: 88,
     },
     userQuotes: [
       {
@@ -5348,10 +5358,10 @@ export const ALL_TOOLS: ToolData[] = [
       'dify',
     ],
     scoreBreakdown: {
-      features: 88.0,
+      features: 88,
       reviews: 0,
-      momentum: 95.0,
-      popularity: 82.0,
+      momentum: 95,
+      popularity: 82,
     },
     userQuotes: [
       {
@@ -5408,7 +5418,12 @@ export const ALL_TOOLS: ToolData[] = [
         'claude',
         'frase',
       ],
-    scoreBreakdown: { features: 9.6, reviews: 9.2, momentum: 9.8, popularity: 9.0 },
+    scoreBreakdown: {
+      features: 96,
+      reviews: 92,
+      momentum: 98,
+      popularity: 90,
+    },
     userQuotes: [
       {
         role: 'CTO',
@@ -5477,10 +5492,10 @@ export const ALL_TOOLS: ToolData[] = [
       'coze',
     ],
     scoreBreakdown: {
-      features: 4.8,
-      reviews: 4.3,
-      momentum: 4.9,
-      popularity: 4.7,
+      features: 96,
+      reviews: 86,
+      momentum: 98,
+      popularity: 94,
     },
     userQuotes: [
       {
@@ -5548,10 +5563,10 @@ export const ALL_TOOLS: ToolData[] = [
       'gpts',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.3,
-      momentum: 4.8,
-      popularity: 4.5,
+      features: 94,
+      reviews: 86,
+      momentum: 96,
+      popularity: 90,
     },
     userQuotes: [
       {
@@ -5619,10 +5634,10 @@ export const ALL_TOOLS: ToolData[] = [
       'flowise',
     ],
     scoreBreakdown: {
-      features: 4.7,
-      reviews: 4.3,
-      momentum: 4.6,
-      popularity: 4.5,
+      features: 94,
+      reviews: 86,
+      momentum: 92,
+      popularity: 90,
     },
     userQuotes: [
       {
