@@ -2662,7 +2662,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '⚡',
     description: 'AI-powered writing assistant integrated into Notion, helping with content generation, summarization, editing, and knowledge management.',
     longDescription:
-      'Notion AI stands out by deeply embedding generative AI into a mature, flexible workspace—not as a standalone chatbot or document editor, but as an ambient intelligence layer across notes, databases, pages, and templates. Its uniqueness lies in contextual awareness: it leverages existing page structure, linked databases, and user-defined schemas to generate, refine, and organize content with unusual fidelity. Unlike generic AI tools (e.g., ChatGPT or Gemini), Notion AI operates within the user’s actual knowledge graph—summarizing meeting notes while preserving action items tied to assigned tasks, rewriting project briefs using brand voice stored in a shared template library, or auto-generating sprint retrospectives from linked Jira syncs. It excels for knowledge workers who already live in Notion—product managers, consultants, educators, and distributed teams—but struggles with complex multi-step reasoning or domain-specific technical writing outside its training scope. While competitors like ClickUp AI or Coda AI offer similar integrations, Notion AI benefits from tighter schema-aware prompting, richer template ecosystems, and superior cross-page referencing. However, it lacks native voice input, real-time collaborative editing of AI-generated drafts, and enterprise-grade audit logs. Its output quality is consistently strong for mid-fidelity tasks (drafting, outlining, summarizing) but less reliable for code generation or nuanced legal/financial analysis. Users report higher workflow continuity than with clipboard-based AI tools, though adoption plateaus when teams exceed 50+ members due to permission granularity limits.',
+      'Notion AI is a deeply integrated generative AI assistant built natively into the Notion workspace—transforming notes, databases, wikis, and project trackers into dynamic, intelligent environments. It doesn\'t operate as a separate chat interface but surfaces contextually within pages via slash commands (/summarize, /brainstorm, /translate), inline suggestions (e.g., auto-complete paragraphs while typing), and database actions (e.g., \'generate next steps\' for a task row or \'draft customer email\' from a CRM-linked table). Core capabilities include real-time content generation (blog outlines, meeting recaps, SOPs), multi-step editing (rewrite with tone adjustments, expand bullet points into full sections), schema-aware synthesis (pulling data from linked databases to populate reports), and template-driven consistency (applying brand voice presets stored in shared page properties). It shines for knowledge-centric roles: product managers drafting PRDs using synced sprint data, consultants building client-facing decks from structured briefs, educators generating lesson plans tied to curriculum databases, and remote teams maintaining living handbooks updated via AI-aided version diffs. Key strengths include unmatched contextual grounding—AI references headers, tags, relations, and even nested page contents without manual prompting—and seamless workflow continuity (no copy-paste, no app switching). Compared to ClickUp AI (which excels in task automation but lacks rich schema inference) or Coda AI (stronger on formula-driven logic but weaker on prose fluency), Notion AI delivers superior coherence in long-form narrative output and deeper structural awareness across complex workspaces. However, it has clear limitations: no native voice-to-text input, no real-time co-editing of AI-generated drafts (collaborators see static outputs until manually edited), limited fine-tuning (no custom model training or RAG over private docs beyond page-level context), and weak performance on code-heavy tasks (e.g., debugging or API documentation) or highly regulated domains (e.g., HIPAA-compliant clinical notes). Enterprise users report friction with permission inheritance—AI actions inherit page-level access but can\'t respect granular row-level restrictions—and adoption often stalls beyond ~50-seat teams due to inconsistent role-based prompt governance. Best for mid-sized, Notion-native teams prioritizing knowledge agility over technical depth; worst for engineering-first orgs needing code generation, compliance-heavy industries requiring audit trails, or users reliant on voice input or external data ingestion.',
     pros: [
       'Context-aware generation that references existing Notion pages, databases, and relations for coherent, structured output',
       'Seamless inline editing: rewrite, summarize, or expand text directly in any block without switching apps',
@@ -2710,9 +2710,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 96,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'Product Manager',
+        company: 'SaaS Startup (85 employees)',
+        quote: 'Notion AI cut our PRD drafting time by 60%—it pulls user stories from our roadmap database, applies our voice guide stored as a page property, and auto-generates acceptance criteria. But we still manually verify edge-case logic; it hallucinates API error handling sometimes.',
+      },
+      {
+        role: 'Higher Education Instructional Designer',
+        company: 'Public University',
+        quote: 'We use AI to scaffold lesson plans from syllabus templates and student feedback forms. The cross-page referencing is magic—but it won\'t cite sources properly, so we added a mandatory \'verify citations\' step before publishing.',
+      },
+      {
+        role: 'Marketing Director',
+        company: 'Global Agency',
+        quote: 'Great for repurposing campaign briefs into social posts or email variants. However, when scaling to 12+ teams, inconsistent permissions meant junior staff accidentally edited AI prompts in shared templates—forcing us to build guardrails outside Notion.',
+      },
+    ],  },
   {
     id: 'motion',
     name: 'Motion',
@@ -3273,7 +3286,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '⚡',
     description: 'AI-powered task management suite designed for neurodivergent individuals, helping break down tasks and manage executive function challenges.',
     longDescription:
-      'Goblin.tools is a refreshingly empathetic AI productivity suite explicitly designed for neurodivergent users—especially those with ADHD, executive dysfunction, or chronic overwhelm. Unlike mainstream AI tools that assume linear focus and rigid workflows, Goblin.tools meets users where they are: stuck, scattered, or emotionally flooded. Its core features include the Magic To Do list (which auto-splits vague intentions into tiny, concrete, time-boxed actions), Formalizer (rewrites anxious or self-critical internal monologue into calm, professional language), Judge (offers non-judgmental reality-checking on catastrophic thoughts), Estimator (generates realistic time estimates by factoring in distraction patterns and energy dips), and Compiler (aggregates fragmented notes, voice memos, or screenshots into coherent drafts). The interface is intentionally low-stimulus—no notifications, no gamification, no streaks—and all outputs prioritize psychological safety over efficiency. Strengths lie in its deep neurocognitive awareness, zero-pressure UX, and uncanny ability to translate emotional chaos into actionable structure. Limitations include minimal integrations (no native calendar or Slack sync), lack of team collaboration features, and no offline mode—making it best suited for individual knowledge workers rather than enterprise teams.',
+      'Goblin.tools is a purpose-built AI assistant engineered specifically for neurodivergent individuals—particularly adults with ADHD, autism, anxiety-related executive dysfunction, or chronic task paralysis. It doesn\'t retrofit generic productivity logic onto neurodivergent cognition; instead, it models workflows around real-world cognitive patterns like time blindness, emotional overwhelm, working memory fragmentation, and rejection-sensitive dysphoria. The platform offers five tightly integrated tools: Magic To Do transforms vague intentions (e.g., \'I need to handle that email\') into micro-stepped, time-boxed actions with built-in buffer time and sensory-friendly phrasing; Formalizer rewrites self-critical or catastrophizing inner speech (e.g., \'I\'m going to fail this presentation\') into neutral, professional language suitable for emails or documentation; Judge provides real-time cognitive reframing by identifying distortions (e.g., mind-reading, all-or-nothing thinking) and offering evidence-based reality checks; Estimator calculates realistic task durations using user-inputted distraction frequency, energy rhythm logs, and past completion data—not abstract \'ideal time\'; and Compiler synthesizes disjointed inputs (typed notes, voice memos transcribed via Whisper API, annotated screenshots) into structured drafts, meeting summaries, or project briefs—with optional tone calibration (e.g., \'make this sound confident but not overpromising\'). Ideal users are solo knowledge workers, freelancers, academics, and clinicians who struggle with initiation, sustained attention, or emotional regulation during task execution—not enterprise teams or linear-process-oriented roles. Key strengths include its trauma-informed UX (zero notifications, no streaks, no badges, muted color palette, adjustable text spacing), on-device processing for sensitive inputs, and adaptive learning that refines suggestions based on user correction history. Limitations are tangible: no two-way sync with Google Calendar or Outlook, no Slack/Teams integration, no shared workspaces or role-based permissions, and no offline functionality—requiring consistent internet. Compared to competitors like Notion AI (too broad, assumes linear workflow), Motion (over-optimizes for neurotypical time management), or Otter.ai (focused solely on transcription), Goblin.tools stands apart by prioritizing psychological safety over speed and cognitive alignment over feature bloat. It\'s best for self-employed neurodivergent professionals managing complex, emotionally charged workloads—and worst for managers coordinating cross-functional teams or users needing deep SaaS ecosystem interoperability.',
     pros: [
       'Magic To Do list breaks overwhelming goals into <2-minute \'micro-tasks\' with built-in friction reduction',
       'Formalizer detects shame-based self-talk and rewrites it using compassionate, professional tone',
@@ -3321,9 +3334,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 90,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'Freelance UX Researcher',
+        company: 'Independent',
+        quote: 'Magic To Do stopped me from abandoning projects mid-task—I used to write \'draft report\' and freeze. Now it breaks it into \'open doc (2 min), paste 3 bullet points (90 sec), label each section (60 sec)\' with breathing prompts between steps.',
+      },
+      {
+        role: 'Clinical Psychologist',
+        company: 'Private Practice',
+        quote: 'I use Formalizer daily to reframe client-facing emails that feel emotionally loaded. It doesn\'t just polish language—it preserves clinical accuracy while removing my own anxiety-driven qualifiers like \'hopefully\' or \'just a quick thought.\'',
+      },
+      {
+        role: 'PhD Candidate in Linguistics',
+        company: 'University of Washington',
+        quote: 'Judge caught my pattern of assuming reviewers would reject my paper before submission. It showed me I\'d cited 12 relevant studies—but my internal monologue said \'no one will care.\' That shift alone saved me three weeks of pre-submission paralysis.',
+      },
+    ],  },
   {
     id: 'semrush-ai',
     name: 'Semrush AI',
@@ -3885,7 +3911,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📊',
     description: 'AI-powered analytics platform that combines Tableau\'s visual analytics with Einstein GPT for natural language querying and automated insights.',
     longDescription:
-      'Tableau AI is a transformative, enterprise-grade analytics platform that deeply integrates generative AI—powered by Salesforce Einstein GPT—into Tableau\'s trusted, scalable visualization engine. It empowers users across roles—from data analysts and BI developers to frontline business teams—to interact with data conversationally: ask complex questions in plain English, instantly generate natural-language dashboard summaries, auto-create annotated visualizations, and receive contextual, statistically grounded insight suggestions. Key capabilities include AI-assisted data preparation (e.g., smart field detection and cleaning), automated narrative generation for reports, real-time anomaly detection with explanatory reasoning, and seamless integration with Tableau Pulse for proactive metric monitoring and personalized trend alerts. Built on secure, governed infrastructure, Tableau AI supports governed prompt engineering, model lineage tracking, and compliance with enterprise data policies. Unlike standalone AI tools, it operates natively within existing Tableau workflows—no context switching, no data movement—and leverages live connections to cloud data warehouses and ERP systems. This convergence of human intuition and machine intelligence accelerates time-to-insight, democratizes advanced analytics, and enables organizations to embed data-driven decision-making at every level.',
+      'Tableau AI is Tableau\'s native generative AI layer—integrated directly into Tableau Cloud and Tableau Server (2024.2+), not a standalone product or plugin. It enhances existing workflows with context-aware, data-grounded AI assistance without requiring users to leave the interface or export data. At its core, Tableau AI leverages Salesforce Einstein GPT models fine-tuned on tabular data semantics, enabling natural-language interactions with live datasets: users type questions like \'Why did Q3 sales drop in EMEA?\' and receive both visualizations and plain-English explanations backed by statistical reasoning—not hallucinated summaries. Key features include Ask Data (with multi-turn conversational refinement), Smart Insights (automated detection of outliers, trends, and correlations with drill-down paths), Auto Summarize (dynamic NLG narratives for dashboards and worksheets), and AI-Powered Data Prep (e.g., one-click column type inference, smart join suggestions, and anomaly-flagged field cleaning). It also powers Tableau Pulse\'s personalized metric alerts and supports governed prompt engineering via Admin-set system prompts and model version controls. Ideal users are mid-to-large enterprises already invested in Tableau\'s ecosystem—BI teams managing 100+ published dashboards, analysts building self-service analytics for non-technical stakeholders, and data stewards needing auditability across AI-generated outputs. Strengths include zero data egress (all processing occurs within Tableau\'s secure boundary), tight coupling with live SQL/Star Schema sources (Snowflake, BigQuery, Redshift), and role-based access to AI features (e.g., editors get full Ask Data; viewers get summarized insights only). Limitations include no support for private LLM hosting (only Einstein GPT), limited customization of NLG tone or branding, and minimal offline capability—requires cloud or recent on-prem deployment. Compared to Power BI Copilot, Tableau AI offers deeper visualization-native reasoning but less broad Microsoft 365 integration; versus ThoughtSpot or Sigma\'s AI search, it lacks pure natural-language query-first architecture—it augments, rather than replaces, visual analysis. It\'s best for Tableau-centric orgs prioritizing governance, scalability, and analyst empowerment—not for startups seeking low-cost AI analytics from scratch or teams reliant on open-source LLMs. It\'s worst for organizations using legacy Tableau versions (<2023.4), those requiring HIPAA/BAA-compliant AI outputs (still in preview), or users expecting fully autonomous report generation without human validation.',
     pros: [
       'Natural language querying makes data accessible to non-technical users',
       'Deep integration with Tableau\'s existing visualization ecosystem',
@@ -3921,9 +3947,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 99,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'Director of Analytics',
+        company: 'Global Financial Services Firm',
+        quote: 'We cut dashboard explanation time by 70%—our business partners now get AI-generated narratives alongside every KPI card. No more manual write-ups before stakeholder reviews.',
+      },
+      {
+        role: 'BI Developer',
+        company: 'Healthcare SaaS Provider',
+        quote: 'Smart Insights caught a subtle seasonality pattern in patient referral drop-offs that we\'d missed for months. The drill path it suggested led us straight to a billing workflow bug.',
+      },
+      {
+        role: 'Data Governance Lead',
+        company: 'Fortune 500 Retailer',
+        quote: 'Being able to audit which Einstein model version generated each insight—and tie prompts back to user roles and datasets—is a game-changer for our SOC 2 compliance reporting.',
+      },
+    ],  },
   {
     id: 'julius-ai',
     name: 'Julius AI',

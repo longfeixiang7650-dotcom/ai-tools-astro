@@ -169,9 +169,9 @@ RULES: ASCII quotes only. Output ONLY the valid JSON object with no other text."
 if __name__ == '__main__':
     # [id, name, category]
     ts = [
-        ['picsart-ai', 'Picsart AI', 'AI Image & Design'],
-        ['obviously-ai', 'Obviously AI', 'AI Data & Analytics'],
-        ['krisp', 'Krisp', 'AI Audio Enhancement'],
+        ['goblin-tools', 'Goblin.tools', 'AI Neurodiversity & Task Assistant'],
+        ['tableau-ai', 'Tableau AI', 'AI Data & Analytics'],
+        ['notion-ai', 'Notion AI', 'AI Writing & Knowledge Assistant'],
     ]
     content = open(TOOLS_FILE).read()
     for tid, tname, tcategory in ts:
