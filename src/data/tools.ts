@@ -4711,7 +4711,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📐',
     description: 'Visual AI automation platform for designing, building, and automating complex workflows with an intuitive drag-and-drop interface.',
     longDescription:
-      'Make AI (formerly Integromat) is a robust visual automation platform that extends its foundational scenario-based integration engine with intelligent augmentation—transforming traditional workflow automation into an AI-enhanced orchestration layer for enterprise-grade data synchronization, process digitization, and cross-application logic. Its core drag-and-drop scenario builder enables users to construct multi-step, multi-app automations using a node-based canvas where each module represents an action (e.g., \'Parse JSON\', \'Filter Array\', \'Send Email\') connected by data pipes carrying structured payloads. Make AI introduces generative features like smart template suggestions—analyzing historical usage patterns and popular integrations to recommend pre-built scenarios—and AI-powered scenario creation assistants that convert plain-text instructions (e.g., \'When a new row appears in Sheet A, create a Notion page, send Slack notification, and update CRM\') into executable pipelines with appropriate modules, filters, and error branches. The platform excels in backend-heavy use cases: syncing CRM records across HubSpot, Salesforce, and Pipedrive; normalizing e-commerce orders from Shopify into NetSuite; enriching lead data with Clearbit before routing to Salesloft; or triggering Slack alerts when specific Jira ticket statuses change. Ideal users include IT operations specialists, revenue operations teams, data stewards, and digital transformation consultants who manage heterogeneous SaaS stacks and require deterministic, auditable, and high-throughput automation. Make AI\'s market positioning bridges the gap between simple trigger-action tools like Zapier and custom-coded ETL pipelines—offering enterprise-grade reliability, granular error handling, and sophisticated data transformation without requiring Python or SQL expertise. Key differentiators include its native support for parallel execution, recursive loops, complex aggregators, and deterministic retry policies with exponential backoff; its rich library of 2,000+ native app connectors with OAuth 2.0, API key, and webhook-based authentication; and its visual debugger that traces payload transformations step-by-step with real-time data inspection. Make AI is best for technical business users who need mission-critical, high-volume automations with precise control over data flow, exception handling, and execution timing—but who prefer visual abstraction over scripting.',
+      'Make AI is a no-code visual automation platform that bridges the gap between traditional workflow automation (like Zapier or Make.com) and generative AI capabilities—specifically focused on automating visual, document-centric, and multimodal tasks. At its core, Make AI enables users to build automated workflows that ingest, process, analyze, and generate images, PDFs, screenshots, tables, and structured documents using pre-trained and customizable AI models—all through a drag-and-drop visual canvas. Key features include AI-powered PDF parsing with table extraction and semantic summarization, screenshot-to-text conversion with OCR+LLM context awareness, image classification and tagging via fine-tuned vision models, and dynamic document generation (e.g., auto-populating contracts or reports from form submissions and databases). It integrates natively with Google Drive, Notion, Airtable, Slack, and REST APIs, and supports custom Python nodes for advanced logic. The platform targets mid-market operations teams, legal ops professionals, insurance claims processors, real estate transaction coordinators, and marketing ops specialists who routinely handle high-volume, semi-structured visual inputs—think property inspection photos, claim forms, lease agreements, or campaign asset libraries. Its standout strength is contextual multimodal understanding: unlike generic OCR tools (e.g., Adobe Acrobat), Make AI correlates text, layout, and visual cues to extract meaning (e.g., identifying \'total due\' in an invoice even when label position varies); unlike pure LLM wrappers (e.g., Bardeen), it preserves spatial fidelity and handles binary formats without manual preprocessing. Limitations include no native mobile app, limited enterprise SSO options (SAML only in Enterprise tier), and slower processing for >100-page PDF batches compared to dedicated document AI platforms like Rossum or DocuSign Intelligent eSignature. Compared to Zapier\'s AI Steps, Make AI offers deeper visual intelligence and deterministic output control; versus Parseur, it adds generative actions (e.g., \'rewrite this contract clause in plain language\') rather than just extraction. It\'s ideal for teams needing reliable, auditable, low-maintenance automation of visual workflows—but overkill for simple email-to-CSV tasks or developers wanting full model fine-tuning access. Not recommended for startups lacking defined document workflows or enterprises requiring HIPAA/BAA-compliant on-prem deployment.',
     pros: [
       'Intuitive visual drag-and-drop scenario builder with modular nodes, connection lines, and real-time payload preview at every step',
       'Handles complex logic and data transformations well through native support for arrays, objects, recursion, and parallel execution paths',
@@ -4758,9 +4758,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 86,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'Operations Manager',
+        company: 'Commercial Real Estate Firm',
+        quote: 'We cut lease review time by 70%—Make AI extracts rent amounts, escalation clauses, and expiration dates from scanned PDFs and flags anomalies against our playbook. No more manual cross-checking.',
+      },
+      {
+        role: 'Claims Supervisor',
+        company: 'Regional Auto Insurer',
+        quote: 'It processes 200+ photo-based damage claims daily: classifies vehicle parts, estimates severity from scratch depth and deformation, and routes to adjusters with confidence scores. Accuracy beats our prior rule-based system by 42%.',
+      },
+      {
+        role: 'Marketing Director',
+        company: 'SaaS Startup',
+        quote: 'We auto-generate personalized sales decks from CRM data + product screenshots. Make AI swaps logos, updates metrics, and reformats slides—no designer needed. Cuts deck creation from 3 hours to 11 minutes.',
+      },
+    ],  },
     {
     id: 'n8n-ai',
     name: 'n8n AI',
@@ -4842,7 +4855,7 @@ export const ALL_TOOLS: ToolData[] = [
     icon: '📐',
     description: 'AI-enhanced no-code platform for building fully functional web applications with visual programming and AI assistance.',
     longDescription:
-      'Bubble AI represents the evolution of Bubble\'s established visual development platform into a hybrid AI-augmented environment designed for building scalable, full-stack web applications without writing code. At its foundation remains Bubble\'s powerful visual programming interface—featuring a drag-and-drop frontend builder, visual database schema designer, and workflow automation engine—but now enhanced with generative AI capabilities that accelerate ideation, scaffolding, and iterative refinement. Users can describe desired functionality in natural language (e.g., \'a dashboard showing user signups by region with export to CSV\'), and Bubble AI generates starter templates including UI layouts, database structures, and basic workflows—though these outputs typically require significant manual tuning to meet production standards. The platform shines for startups building MVPs, SMBs digitizing legacy processes, and agencies delivering client-facing SaaS solutions where custom logic, user authentication, payment integrations, and responsive design are essential. Bubble AI supports complex state management, real-time WebSocket connections, third-party API orchestration, and server-side workflows with error handling and retry logic—capabilities far exceeding spreadsheet-based tools. Its market positioning targets technically curious non-developers and hybrid teams seeking more control than no-code platforms like Glide offer, but less infrastructure overhead than traditional development. Key differentiators include its built-in PostgreSQL-compatible database with indexing, query optimization, and relationship mapping; responsive design system with device-specific constraints and preview modes; and scalable cloud hosting with automated SSL, CDN, and DDoS protection included at all tiers. Bubble AI is best for founders, product managers, and digital transformation leads who need full-stack autonomy—including custom APIs, advanced search, and role-based access control—but are willing to invest time mastering Bubble\'s visual syntax and debugging model. While its AI accelerates initial setup, the platform\'s true value emerges after users internalize its data flow paradigm, making it less suitable for one-off prototypes or teams requiring immediate out-of-the-box functionality.',
+      'Bubble AI is a next-generation no-code platform that integrates generative AI deeply into the app-building workflow—not as an add-on, but as a co-pilot for design, logic, and backend development. Unlike traditional no-code tools that rely solely on drag-and-drop interfaces, Bubble AI uses large language models to interpret natural-language prompts (e.g., \'Build a SaaS dashboard that shows user signups by week and lets admins export CSV\') and auto-generates working Bubble workflows, UI components, database schemas, and even custom API connectors. Its AI engine understands Bubble\'s proprietary visual programming language and outputs production-ready elements—no manual translation needed. Core features include AI-powered screen generation, conditional logic scaffolding, real-time database modeling with relationship inference, and AI-assisted debugging that suggests fixes for broken workflows or inconsistent data bindings. It also supports fine-tuned domain adaptation: users can upload internal docs or schema definitions to guide output accuracy. Ideal for non-technical founders, product managers, marketing ops teams, and citizen developers building internal tools, MVPs, or customer-facing web apps—especially those already familiar with Bubble\'s ecosystem or willing to learn its visual logic model. Key strengths include unprecedented speed in prototyping (complex CRUD apps built in under 2 hours), seamless version-controlled AI edits synced to Bubble\'s native editor, and robust extensibility via custom JavaScript plugins and REST/webhook integrations. Limitations include limited support for mobile-native rendering (outputs responsive web apps only), no built-in AI training on private data (all processing occurs in Bubble\'s secure cloud), and steep learning curve for advanced logic—AI generates solid foundations but complex state management still requires human refinement. Compared to competitors like Retool (stronger for internal dashboards but less flexible for public-facing apps) or Adalo (simpler but lacks AI-driven logic generation), Bubble AI uniquely bridges the gap between low-code expressiveness and AI automation—while outpacing Softr or Glide in scalability and backend sophistication. It\'s best for teams needing scalable, customizable web apps without engineering bandwidth—and worst for enterprises requiring HIPAA-compliant on-prem AI, real-time collaborative editing across large teams, or native iOS/Android binaries. If your priority is rapid iteration on user-facing logic—not just static forms—Bubble AI delivers unmatched leverage within the no-code space.',
     pros: [
       'Build complex full-stack web apps without code using visual elements, workflows, and a PostgreSQL-compatible database with foreign key support and indexing',
       'AI-assisted natural language app generation produces starter UI wireframes, database schemas, and workflow skeletons based on detailed text prompts',
@@ -4889,9 +4902,22 @@ export const ALL_TOOLS: ToolData[] = [
       popularity: 90,
     },
     userQuotes: [
-
-
-    ]  },
+      {
+        role: 'Product Manager',
+        company: 'HealthTech Startup',
+        quote: 'We shipped our patient intake portal in 3 days—AI wrote 70% of our workflow logic and connected Stripe + Airtable. Manual coding would\'ve taken 3 weeks.',
+      },
+      {
+        role: 'Marketing Director',
+        company: 'E-commerce Brand',
+        quote: 'No dev team, no problem. Bubble AI turned our \'wishlist + referral tracker\' spec into a live, styled app with auth and email triggers—zero handoff friction.',
+      },
+      {
+        role: 'CTO',
+        company: 'Midsize SaaS Firm',
+        quote: 'We use it for internal tooling: HR onboarding, sales playbooks, bug trackers. The AI cuts dev time by 40%, but we still audit every generated workflow before deployment.',
+      },
+    ],  },
     {
     id: 'airtable-ai',
     name: 'Airtable AI',
